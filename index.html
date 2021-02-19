@@ -2,1491 +2,1229 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Title -->
+  <title>International Workshop on Human-Engaged Computing 2021</title>
 
-    <!-- Material Design for Bootstrap fonts and icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Material Design for Bootstrap CSS -->
-    <link rel="stylesheet"
-        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-        crossorigin="anonymous"></script>
-    <script>$('#myModal').modal(options)</script>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-    <title>IWHEC 2021 - Home</title>
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+  <link rel="stylesheet" href="./assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
+  <link rel="stylesheet" href="./assets/vendor/dzsparallaxer/dzsparallaxer.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <style type="text/css">
+    @font-face {
+      font-family: 'airstrikecond';
+      src: url('./static/font/airstrikecond.ttf') format('truetype');
+    }
+
+    .custom-font {
+      font-family: 'airstrikecond';
+      font-size: 80px;
+    }
+
+    @font-face {
+      font-family: 'airstrikecond-outline';
+      src: url('./static/font/airstrikeout.ttf') format('truetype');
+    }
+
+    .custom-font-outline {
+      font-family: 'airstrikecond-outline';
+      font-size: 40px;
+    }
+  </style>
 </head>
-</head>
 
-<body id="bodytop" class="mdbootstrap" data-target="#list-left" data-spy="scroll" data-offset="100">
-    <header id="iwhecheader" class="clearfix navbar navbar-dark navbar-expand-lg flex-column flex-md-row fixed-top"
-        style="background-color: #0D47A1;">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/chec.png" height="40" alt="CHEC Logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="nav nav-tabs bg-primary ml-auto" style="background-color: #0D47A1 !important;">
-                <li class="nav-item">
-                    <a class="nav-link" href="#iwhec">Home</a>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header id="header"
+    class="header header-box-shadow-on-scroll header-abs-top header-white-nav-links-lg header-bg-transparent header-show-hide"
+    data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+          }'>
+    <div class="header-section">
+      <!-- Topbar -->
+      <div class="container header-hide-content d-none d-lg-block pt-2">
+        <div class="d-flex align-items-center">
+          <div class="ml-auto">
+            <!-- Jump To -->
+            <div class="hs-unfold d-sm-none mr-2">
+              <a class="js-hs-unfold-invoker dropdown-nav-link dropdown-toggle d-flex align-items-center"
+                href="javascript:;" data-hs-unfold-options='{
+                    "target": "#jumpToDropdown",
+                    "type": "css-animation",
+                    "event": "hover",
+                    "hideOnScroll": "true"
+                   }'> Jump to
+              </a>
+
+              <div id="jumpToDropdown" class="hs-unfold-content dropdown-menu">
+                <a class="dropdown-item" href="./page-faq.html">Help</a>
+                <a class="dropdown-item" href="./page-contacts-agency.html">Contacts</a>
+              </div>
+            </div>
+            <!-- End Jump To -->
+
+            <!-- Links -->
+            <!-- <div class="nav nav-sm nav-y-0 d-none d-sm-flex ml-sm-auto">
+              <a class="nav-link" href="./page-faq.html">Help</a>
+              <a class="nav-link" href="./page-contacts-agency.html">Contacts</a>
+            </div> -->
+            <!-- End Links -->
+          </div>
+        </div>
+      </div>
+      <!-- End Topbar -->
+
+      <div id="logoAndNav" class="container">
+        <!-- Nav -->
+        <nav class="js-mega-menu navbar navbar-expand-lg">
+          <!-- White Logo -->
+          <a class="navbar-brand navbar-brand-default" href="index.html" aria-label="Front">
+            <img src="./static/images/logo/logo-white.svg" alt="Logo">
+          </a>
+          <!-- End White Logo -->
+
+          <!-- Default Logo -->
+          <a class="navbar-brand navbar-brand-on-scroll" href="index.html" aria-label="Front">
+            <img src="./static/images/logo/logo.svg" alt="Logo">
+          </a>
+          <!-- End Default Logo -->
+
+          <!-- Default Logo -->
+          <a class="navbar-brand navbar-brand-collapsed" href="index.html" aria-label="Front">
+            <img src="./static/images/logo/logo.svg" alt="Logo">
+          </a>
+          <!-- End Default Logo -->
+
+          <!-- Responsive Toggle Button -->
+          <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+            <span class="navbar-toggler-default">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor"
+                  d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z" />
+              </svg>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor"
+                  d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z" />
+              </svg>
+            </span>
+          </button>
+          <!-- End Responsive Toggle Button -->
+
+          <!-- Navigation -->
+          <div id="navBar" class="collapse navbar-collapse">
+            <div class="navbar-body header-abs-top-inner">
+              <ul class="navbar-nav">
+                <li class="navbar-nav-item">
+                  <a class="nav-link" href="#intro">Intro</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#program">Program</a>
+                <li class="navbar-nav-item">
+                  <a class="nav-link" href="#speakers">Speakers</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#committee">Committee</a>
+                <li class="navbar-nav-item">
+                  <a class="nav-link" href="#program">Program</a>
                 </li>
+                <li class="navbar-nav-item">
+                  <a class="nav-link" href="#committee">Committee</a>
+                </li>
+                <li class="navbar-nav-item">
+                  <a class="nav-link" href="#reference">Reference</a>
+                </li>
+                <!-- <li class="nav-item navbar-nav-last-item">
+                  <a class="btn btn-primary btn-sm btn-pill transition-3d-hover"
+                    href="day3.html"
+                    target="_blank">Day3 Forum</a>
+                </li> -->
+
+              </ul>
+            </div>
+          </div>
+          <!-- End Navigation -->
+        </nav>
+        <!-- End Nav -->
+      </div>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+
+  <main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="position-relative bg-white overflow-hidden">
+      <div class="container position-relative z-index-2 space-top-2 space-top-lg-3 space-bottom-2 space-bottom-md-3">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-9 mb-5 mb-lg-0">
+            <!-- Info -->
+            <div class="mb-6" data-aos="fade-up">
+              <h1 class="text-white mb-3 custom-font-outline" style="line-height: 150%;">
+                International Workshop on 
+              <br>
+              <span class="text-white mb-3 custom-font">
+                Human-Engaged
+                <br>
+                Computing 
+                <br>
+                2021
+                <br>
+              </span>
+            </h1>
+            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4" href="#">March 19 - 20, 2021</a>
+            <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="day3.html">Affiliated Forum, March 21, 2021</a>
+          <br>
+          <br>  
+          </div>
+            <!-- End Info -->
+          </div>
+
+          <div class="col-lg-3">
+            <div class="position-relative">
+              <!-- Device Mockup -->
+              <div class="device d-none d-sm-block mb-3 mb-sm-0" data-aos="fade-up">
+                <!-- <img class="img-fluid" src="./assets/svg/components/macbook.svg" alt="Image Description">
+                <img class="device-macbook-screen" src="./assets/img/1618x1010/img3.jpg" alt="Image Description"> -->
+              </div>
+              <!-- End Device Mockup -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG Shape -->
+      <div class="bg-primary position-absolute top-0 right-0 bottom-0 left-0"
+        style="background-image:url(./static/images/background/bg.jpg)"></div>
+
+      <!-- <figure class="d-none d-md-block position-absolute" style="top: 0rem; left: 40rem; width: 62rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#1818EF" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+      <figure class="d-none d-md-block position-absolute" style="top: 8rem; left: 40rem; width: 62rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#A612DD" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+      <figure class="d-none d-md-block position-absolute" style="top: 5rem; left: -10rem; width: 62rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#1919CC" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure>
+      <figure class="d-none d-md-block position-absolute" style="top: -5rem; left: -10rem; width: 75rem; height: 62rem;">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 260 260">
+          <circle fill="#1818EF" opacity=".1" cx="130" cy="130" r="130"/>
+        </svg>
+      </figure> -->
+
+      <figure class="position-absolute bottom-0 right-0 left-0">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1921 273">
+          <polygon fill="#fff" points="0,273 1921,273 1921,0 " />
+        </svg>
+      </figure>
+      <!-- End SVG Shape -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- About Section -->
+    <div class="container">
+      <h3 id="intro">International Workshop on Human-Engaged Computing (IWHEC)</h3>
+
+      <div class="row mb-5">
+        <div class="col-md-3 order-md-2 mb-3 mb-md-0">
+          <div class="pl-md-4">
+            <ul class="list-unstyled list-article">
+              <li>
+                <span class="h5 d-block">Past IWHEC</span>
+                <span class="d-block font-size-1"><a href="http://iw2020.xrenlab.com/">IWHEC 2020</a></span>
+                <span class="d-block font-size-1"><a href="http://iw2019.xrenlab.com/">IWHEC 2019</a></span>
+                <span class="d-block font-size-1"><a href="http://forum.chec.ren/">IWHEC 2017</a></span>
+              </li>
+<!-- 
+              <li>
+                <span class="h5 d-block">Company size</span>
+                <span class="d-block font-size-1">150 - 300</span>
+              </li>
+
+              <li>
+                <span class="h5 d-block">Avg. Salary</span>
+                <span class="d-block font-size-1">$25 - $45</span>
+              </li>
+
+              <li>
+                <span class="h5 d-block">Industry</span>
+                <span class="d-block font-size-1">Information Technology</span>
+              </li> -->
+
+              <!-- <li>
+                <span class="h5 d-block">Links</span>
+
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip"
+                      data-placement="top" title="Capsule on Facebook">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+
+                  <li class="list-inline-item">
+                    <a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip"
+                      data-placement="top" title="Capsule on Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li class="list-inline-item">
+                    <a class="icon icon-xs icon-soft-dark icon-circle" href="#" data-toggle="tooltip"
+                      data-placement="top" title="Capsule on Github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
             </ul>
+          </div>
         </div>
-    </header>
-    <div class="container-fluid" style="padding-left:0;">
-        <div class="jumbotron-top" id="intro">
-            <div class="jumbotron">
-                <div class="container">
-                    <h1 class="display-4" >International Workshop on Human-Engaged Computing 2021</h1>
-                    <p><i class="material-icons">place</i> Online,<span
-                            class="ml-2">March 19 - 20, 2021 (Talks in English)
-                        </span></p>
-                    <ul>
-                        <li><a href="day3.html">See Affiliated Forum on Human · Technology · Future, March 21, 2021 (In Chinese)</a></li>
-                            <!-- <li><a href="VB/IWHEC_Poster.pdf"  download="IWHEC2021 Poster">See IWHEC 2021 Poster</a></li> -->
-                            <li><a href="http://iw2020.xrenlab.com" target="_blank">See IWHEC 2020</a></li>
-                        <li><a href="http://iw2019.xrenlab.com" target="_blank">See IWHEC 2019</a></li>
-                        <li><a href="http://forum.chec.ren" target="_blank">See IWHEC 2017</a></li>
-                    </ul>
-                </div>
+
+        <div class="col-md-9">
+          <div class="mb-5">
+            <p class="text-justify">The Center for Human-Engaged Computing (CHEC) will organize an international workshop on
+              Human-Engaged Computing (IWHEC 2021) on March 19-21, 2021, focusing on rethinking the
+              relationship between humans and computers.
+              The workshop will be convened online via ZOOM and it will be open to all audiences
+              around the world through webcasts and/or live-streaming platforms.</p>
+
+            <div class="collapse" id="collapseLinkDescription">
+              <p class="text-justify">The aim of this workshop is to rethink the relationship between humans and computers.
+                The workshop will strive to achieve a common platform to advance various idea exchanges
+                around the world, resulting in the evolution of a stronger workforce in order to create a better world
+                to live in.
+                We are inviting distinguished speakers from around the world and from several domains such
+                as human-computer interaction, brain science, philosophy, computer science, AI, design so on.</p>
+
+              <p class="text-justify">Covid-19 has significantly impacted the lives of every person on the planet. Much of the
+                world that was familiar to most people is in pause mode. People are ordered to stay at home
+                in order to save lives by slowing the spread of the deadly virus. Fortunately, with the fast
+                development of computing technologies and digital services, along with the rapid
+                construction of information infrastructures, people are able to source information from
+                television media, radio broadcasts, social media, and various Internet avenues. Technologies
+                are playing a central, critical, and arguably indispensable role in our daily lives during
+                the pandemic. But the new efficiencies afforded by new technologies is a two-edged sword,
+                and it is capable of healing or harming human relationships, human integrity and human
+                enterprises. For example, efficient private and personal access to information, accessible
+                publishing, and new modes of social interaction open the door to the dissemination of fake
+                news, to trolling, to prejudiced opinions and to undue influence that overwhelms and
+                confuses people more efficiently than ever before. On the other hand, responses to such
+                threats seem to invite despotic intrusions into privacy and the potential diminishment of
+                the right to personal opinions and personal expression. Thus, besides dealing with the
+                relationship between humans and computers under consideration of the human future in general,
+                the workshop also seeks to suggest how researchers who work on the relationship between
+                humans and computers can help develop and enhance the user’s ability to distinguish between
+                inauthentic and authentic information during and after the current crisis.</p>
             </div>
+
+            <a class="link-collapse" data-toggle="collapse" href="#collapseLinkDescription" role="button"
+              aria-expanded="false" aria-controls="collapseLinkDescription">
+              <span class="link-collapse-default">Read more <i class="fas fa-angle-down fa-sm ml-1"></i></span>
+              <span class="link-collapse-active">Read less <i class="fas fa-angle-up fa-sm ml-1"></i></span>
+            </a>
+          </div>
+
+          <div id="fancyboxGallery">
+            <div class="row mx-n2">
+              <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                <a class="js-fancybox media-viewer" href="javascript:;" data-hs-fancybox-options='{
+                  "selector": "#fancyboxGallery .js-fancybox",
+                  "speed": 700
+                }' data-src="./static/images/iwhec/pic1.jpg" data-caption="IWHEC 2020">
+                  <img class="img-fluid rounded" src="./static/images/iwhec/pic1.jpg" alt="Image Description">
+
+                  <span class="media-viewer-container">
+                    <span class="media-viewer-icon">
+                      <i class="fas fa-plus media-viewer-icon-inner"></i>
+                    </span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                <a class="js-fancybox media-viewer" href="javascript:;" data-hs-fancybox-options='{
+                  "selector": "#fancyboxGallery .js-fancybox",
+                  "speed": 700
+                }' data-src="./static/images/iwhec/pic2.jpg" data-caption="IWHEC 2017">
+                  <img class="img-fluid rounded" src="./static/images/iwhec/pic2.jpg" alt="Image Description">
+
+                  <span class="media-viewer-container">
+                    <span class="media-viewer-icon">
+                      <i class="fas fa-plus media-viewer-icon-inner"></i>
+                    </span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                <a class="js-fancybox media-viewer" href="javascript:;" data-hs-fancybox-options='{
+                  "selector": "#fancyboxGallery .js-fancybox",
+                  "speed": 700
+                }' data-src="./static/images/iwhec/pic3.jpg" data-caption="IWHEC 2019">
+                  <img class="img-fluid rounded" src="./static/images/iwhec/pic3.jpg" alt="Image Description">
+
+                  <span class="media-viewer-container">
+                    <span class="media-viewer-icon">
+                      <i class="fas fa-plus media-viewer-icon-inner"></i>
+                    </span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                <a class="js-fancybox media-viewer" href="javascript:;" data-hs-fancybox-options='{
+                  "selector": "#fancyboxGallery .js-fancybox",
+                  "speed": 700
+                }' data-src="./static/images/iwhec/pic4.jpg" data-caption="IWHEC 2017">
+                  <img class="img-fluid rounded" src="./static/images/iwhec/pic4.jpg" alt="Image Description">
+
+                  <span class="media-viewer-container">
+                    <span class="media-viewer-icon">
+                      <i class="fas fa-plus media-viewer-icon-inner"></i>
+                    </span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="col-4 col-sm px-2 mb-3 mb-sm-0">
+                <a class="js-fancybox media-viewer" href="javascript:;" data-hs-fancybox-options='{
+                  "selector": "#fancyboxGallery .js-fancybox",
+                  "speed": 700
+                }' data-src="./static/images/iwhec/pic5.jpg" data-caption="IWHEC 2020">
+                  <img class="img-fluid rounded" src="./static/images/iwhec/pic5.jpg" alt="Image Description">
+
+                  <span class="media-viewer-container">
+                    <span class="media-viewer-icon">
+                        <i class="fas fa-plus media-viewer-icon-inner"></i>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-9 container-content" data-spy="scroll" data-target="#list-left" data-offset="100">
-                <div id="iwhec" style="padding-top:100px; margin-top:-90px;">
-                    <div class="container">
-                        <h2>Introduction</h2>
-                        <hr />
-                        <p class="text-justify lead">
-                            The Center for Human-Engaged Computing (CHEC) will organize an international workshop on
-                            Human-Engaged Computing (IWHEC 2021) on March 19-21, 2021, focusing on rethinking the
-                            relationship between humans and computers.
-                            The workshop will be convened online via ZOOM and it will be open to all audiences
-                            around the world through webcasts and/or live-streaming platforms.
-                        </p>
-                        <p class="text-justify lead">
-                            The aim of this workshop is to rethink the relationship between humans and computers.
-                            The workshop will strive to achieve a common platform to advance various idea exchanges
-                            around the world, resulting in the evolution of a stronger workforce in order to create a better world to live in.
-                            We are inviting distinguished speakers from around the world and from several domains such
-                            as human-computer interaction, brain science, philosophy, computer science, AI, design so on.
-                        </p>
-                        <p class="text-justify lead">
-                            Covid-19 has significantly impacted the lives of every person on the planet. Much of the
-                            world that was familiar to most people is in pause mode. People are ordered to stay at home
-                            in order to save lives by slowing the spread of the deadly virus. Fortunately, with the fast
-                            development of computing technologies and digital services, along with the rapid
-                            construction of information infrastructures, people are able to source information from
-                            television media, radio broadcasts, social media, and various Internet avenues. Technologies
-                            are playing a central, critical, and arguably indispensable role in our daily lives during
-                            the pandemic. But the new efficiencies afforded by new technologies is a two-edged sword,
-                            and it is capable of healing or harming human relationships, human integrity and human
-                            enterprises. For example, efficient private and personal access to information, accessible
-                            publishing, and new modes of social interaction open the door to the dissemination of fake
-                            news, to trolling, to prejudiced opinions and to undue influence that overwhelms and
-                            confuses people more efficiently than ever before. On the other hand, responses to such
-                            threats seem to invite despotic intrusions into privacy and the potential diminishment of
-                            the right to personal opinions and personal expression. Thus, besides dealing with the
-                            relationship between humans and computers under consideration of the human future in general,
-                            the workshop also seeks to suggest how researchers who work on the relationship between
-                            humans and computers can help develop and enhance the user’s ability to distinguish between
-                            inauthentic and authentic information during and after the current crisis.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="speaker-container" id="speakers">
+      </div>
+      <!-- End Row -->
+    </div>
+    <!-- About Section -->
 
-                        <h2>Invited speakers</h2>
+    <!-- Clients Section -->
+    <div class="container space-1">
+      <!-- Title -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
+        <h4 class="text-body h6 text-cap">Organizer</h4>
+      </div>
+      <!-- End Title -->
 
+      <!-- Clients -->
+      <div class="row justify-content-between text-center">
+        <div class="col-4 col-lg-6 mb-5 mb-lg-0">
+          <div class="mx-3">
+            <img class="max-w-15rem max-w-md-15rem mx-auto" style="max-width:13rem;" src="./static/images/logo/CHEC.svg" alt="Image Description">
+          </div>
+        </div>
+        <div class="col-4 col-lg-6 mb-5 mb-lg-0">
+          <div class="mx-3">
+            <img class="max-w-15rem max-w-md-15rem mx-auto" style="max-width:10rem;" src="./static/images/logo/icachi-logo.svg" alt="Image Description">
+          </div>
+        </div>
+      </div>
+      <!-- End Clients -->
+    </div>
+    <!-- End Clients Section -->
 
-                        <hr />
-                        <div class="speaker-box">
-                            <div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/jonathan_grudin.jpg" alt="" class="rounded-circle speaker-avatar" >
-                                    <a href="http://www.jonathangrudin.com"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Jonathan Grudin</h4>
-                                    </a>
-                                    <strong>Microsoft Research</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/hong_z_tan.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://engineering.purdue.edu/~hongtan/"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Hong Z. Tan</h4>
-                                    </a>
-                                    <strong>Purdue University</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/gloria_mark.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www.ics.uci.edu/~gmark/Home_page/Welcome.html"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Gloria Mark</h4>
-                                    </a>
-                                    <strong>University of California, Irvine</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/Kazuhisa Shibata.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://cbs.riken.jp/en/faculty/k.shibata/"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Kazuhisa Shibata</h4>
-                                    </a>
-                                    <strong>RIKEN Center for Brain Science</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/cockton.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www.sunderland.ac.uk/about/staff/computing/gilbertcockton/"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Gilbert Cockton</h4>
-                                    </a>
-                                    <strong>University of Sunderland</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/anirudha.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="http://www.idc.iitb.ac.in/~anirudha/"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Anirudha Joshi</h4>
-                                    </a>
-                                    <strong>IDC School of Design, IIT Bombay, India</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/workdetails.png" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://atg-abhishek.github.io/"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Abhishek Gupta</h4>
-                                    </a>
-                                    <strong>Montreal AI Ethics Institute</strong>
-                                </div>
+    <!-- Clients Section -->
+    <div class="container space-1">
+      <!-- Title -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
+        <h4 class="text-body h6 text-cap">Sponsor</h4>
+      </div>
+      <!-- End Title -->
 
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/doi.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www2.nict.go.jp/employment/researcher/doi-miwako.html"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Miwako Doi</h4>
-                                    </a>
-                                    <strong>NICT</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/FangYou.png" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://tjdi.tongji.edu.cn/TeacherDetail.do?id=4236&lang=en"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Fang You</h4>
-                                    </a>
-                                    <strong>Tongji University</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/citations.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www.jeffjianzhao.com/jianzhao-cv.pdf"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Jian Zhao</h4>
-                                    </a>
-                                    <strong>University of Waterloo</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/DakuoWang.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Dakuo.Wang"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Dakuo Wang</h4>
-                                    </a>
-                                    <strong>IBM Research Watson</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/Zhiwen Yu.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="http://www.ccm.media.kyoto-u.ac.jp/~yu/"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Zhiwen Yu</h4>
-                                    </a>
-                                    <strong>Northwestern Polytechnical University</strong>
-                                </div>
-                                <div class="speaker col-lg-3 text-center" style="padding-top:10px;">
-                                    <img src="static/images/Johanna_Schmidt.jpg" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www.vrvis.at/en/about-us/team/infos/schmidt-johanna"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Johanna Schmidt</h4>
-                                    </a>
-                                    <strong>VRVis</strong>
-                                </div>
-                                <!--<div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">
-                                        Empathy and Symbiosis: Design preferable future AI product and service</h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract:</strong> The future of AI
-                                        product and service design will reshape the relationship of people, community
-                                        and environment. As an increasingly powerful technology, AI also prompt the
-                                        design researcher and practitioner to rethink the harmonious coexistence of
-                                        technology, society and culture. Human-Centred Design and Human-computer
-                                        symbiosis also become an important field and direction of HCI and design
-                                        research. Empathy is crucial to a human-centred design process, and helps design
-                                        thinker to place himself in user's position to gain insight of motivation,
-                                        behaviors and experiences. Symbiosis explores the optimal and ideal role of
-                                        human beings in human-machine systems, and construct the sustainable
-                                        relationship to achieve mutualism. The application of AI in HCI and design
-                                        field, leads the transformation of design processes and methods. Designers and
-                                        researchers need to re-examine the ethical and emotional factors of future AI
-                                        application scenarios with empathy perspective. In the future, AI will be a
-                                        partner of designer, AI will work with designers to create a preferable future
-                                        with new methods and tools that complement the brain-machine advantage. Based on
-                                        Human-engaged Computing methodology, this presentation will explore the social
-                                        needs and cultural experiences of future smart city and society, using
-                                        speculative thinking, futuristic concepts and design fiction methods, to discuss
-                                        how to design the preferable AI product and service for future scenarios, and
-                                        achieve a harmonious goal of empathy with human, and symbiosis with nature.
-                                    </p>
-                                    <br>
-                                    <p class="text-justify font-zoom-out"><strong>Bio:</strong> Fu Zhiyong, Ph.D.,
-                                        Associate Professor of Information Art Design Department, Academy of Arts and
-                                        Design, Tsinghua University, Beijing, China. Director of Service Design
-                                        Institute. He has served as the Secretary-General in Information & Interaction
-                                        Design Committee (IIDC) since 2014, The Vice President of The International
-                                        Chinese Association of Human-computer Interaction（ICACHI）, Academic Director of
-                                        Tsinghua AI Innovation and Entrepreneurship minor, Director of Art and
-                                        Technology Innovation Base of Tsinghua University. During January to April 1998,
-                                        he was a visiting professor of Kansei Evaluation special research project at
-                                        Tsukuba University, Japan. And he is a recipient of the National Award for New
-                                        Century Excellent Talents (2006). During August 2008 to August 2009, He was a
-                                        visiting scholar in school of design at Carnegie Mellon University, USA. He
-                                        teaches courses in interaction design, service design, and design thinking. His
-                                        research focuses on smart products and design tools, human cities and service
-                                        design, and undertakes a number of national projects and overseas cooperation
-                                        projects. He has served as Associate Chair of the ACM CHI 2014 and 2017, 2018,
-                                        2020 Design Subcommittee, and board member of the HCI International 2012-2019
-                                        Cross-Culture Design Sub-committee.
-                                    </p>
-                                </div>-->
+      <!-- Clients -->
+      <div class="row justify-content-between text-center">
+        <div class="col-4 col-lg-3 mb-5 mb-lg-0">
+          <div class="mx-0">
+            <img class="max-w-15rem max-w-md-15rem mx-auto" style="max-width:13rem;" src="./static/images/logo/kut.svg" alt="Image Description">
+          </div>
+        </div>
+        <div class="col-4 col-lg-3 mb-5 mb-lg-0">
+          <div class="mx-0">
+            <img class="max-w-15rem max-w-md-15rem mx-auto" style="max-width:11rem;" src="./static/images/logo/sigchijapan.png" alt="Image Description">
+          </div>
+        </div>
+        <div class="col-4 col-lg-3 mb-5 mb-lg-0">
+          <div class="mx-0">
+            <img class="max-w-15rem max-w-md-15rem mx-auto" style="max-width:11rem;" src="./static/images/logo/sigchichina.png" alt="Image Description">
+          </div>
+        </div>
+        <div class="col-4 col-lg-3">
+          <div class="mx-0">
+            <img class="max-w-15rem max-w-md-15rem mx-auto" style="max-width:13rem;" src="./static/images/logo/HCIK.png" alt="Image Description">
+          </div>
+        </div>
+      </div>
+      <!-- End Clients -->
+    </div>
+    <!-- End Clients Section -->
 
+    <!-- Title -->
+    <div class="text-center space-1">
+      <span class="divider divider-text" id="speakers">Invited Speakers</span>
+    </div>
+    <!-- End Title -->
+    <!-- Testimonials Section -->
+    <div class="bg-light rounded-lg mx-3 mx-md-11 mb-3">
+      <div class="container space-1 space-md-2">
+        <div class="card bg-transparent shadow-none">
+          <div class="row">
+            <div class="col-lg-9">
+              <!-- Card Body -->
+              <div class="card-body h-100 rounded-lg p-0 p-md-4">
 
-                            </div>
-                            <div class="clearfix" style="padding:5px;">
-                            <!--    <span>More speakers will come soon...</span> -->
-                            </div>
-                            
-                            <!--<div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/Jeffrey Bardzell.jpg" alt=""
-                                        class="rounded-circle speaker-avatar">
-                                    <a href="https://www.soic.indiana.edu/all-people/profile.html?profile_id=159"
-                                        target="_blank">
-                                        <h4 style="padding-top:15px;">Jeffrey Bardzell</h4>
-                                    </a>
-                                    <strong>Indiana University</strong>
-                                </div>
-                                <div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">
-                                        “Knowledge Embodied in Artifacts”: A Problem in Design Epistemology</h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract: </strong>Among the most
-                                        exciting developments in HCI research today is the rise of designerly approaches
-                                        to research: research through design, practice-based research, constructive
-                                        design, etc. In a 1994 article seeking to establish such an agenda, Christopher
-                                        Frayling used the provocative phrase, “knowledge embodied in artifacts,” to
-                                        capture this research’s defining feature. As the HCI community has discovered,
-                                        however, understanding, accessing, and legitimating “knowledge embodied in
-                                        artifacts” has been challenging. It is not always clear how highly
-                                        particularized objects are supposed to generalize, how they contribute to theory
-                                        development, or how they might be applied by others.
-                                        <br>
-                                        <br>
-                                        I argue that practitioners of these approaches have often shoehorned their work
-                                        into social scientific frameworks of rigor, validity, and generalizability.
-                                        Instead, design-oriented HCI researchers should pursue a more expansive
-                                        understanding of “HCI research” to support “knowledge embodied in artifacts” as
-                                        a mode of design research. So, rather than locating intellectual validity and
-                                        generalizability in propositions, formal arguments, and theoretical paraphrase,
-                                        we should locate them literally as they are embodied in artifacts themselves.
-                                        This entails engaging designed artifacts as such, that is, analytically
-                                        understanding features such as intertextuality (quoting, references, allusions),
-                                        concrete universals (such as design patterns), themes and variations, and
-                                        polysemy (semantic density, allegory, satire). All of that in turn presupposes
-                                        new modes of presenting design-oriented HCI research, a process already begun
-                                        with Pictorials.
-                                    </p>
-                                    <br>
+                <div class="row">
+                  <div class="col-lg-4">
 
-                                    <p class="text-justify font-zoom-out"><strong>Bio: </strong>Jeffrey Bardzell is a
-                                        Professor of Informatics and Director of the HCI/Design program in the School of
-                                        Informatics, Computing, and Engineering at Indiana University--Bloomington. His
-                                        research contributes to design theory and investigations of social innovation,
-                                        with emphases on critical design, design criticism, creativity and innovation,
-                                        and intimate experiences. A common thread throughout this work is the use of
-                                        aesthetics—including the history of criticism, critical theory, and analytic
-                                        aesthetics—to understand how concepts, materials, forms, ideologies,
-                                        experiential qualities, and creative processes achieve coherence in design
-                                        objects. He is co-editor of Critical Theory and Interaction Design (MIT Press,
-                                        2018) and co-author of Humanistic HCI (Morgan & Claypool, 2015). Bardzell's work
-                                        is funded by the National Science Foundation and the Intel Science and
-                                        Technology Center for Social Computing.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <hr>
-                            <div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/shaowen.png" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://shaowenbardzell.com/about/" target="_blank">
-                                        <h4 style="padding-top:15px;">Shaowen Bardzell</h4>
-                                    </a>
-                                    <strong>Indiana University</strong>
-                                </div>
-                                <div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">Women’s Health in HCI: A Feminist Utopian Design Approach
-                                        to Menopause Wellness</h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract: </strong>Menopause signifies
-                                        the end of a woman’s reproductive ability. Usually starting in a woman’s late
-                                        40s or early 50s, the menopausal transition is a major life phase affecting
-                                        roughly half of the population, resulting in physiological, emotional, and
-                                        social changes. Menopause is commonly understood as a personal women’s health
-                                        issue and examined through the lens of clinical medical research, and design
-                                        approaches typically reflect such an orientation. Yet there are dimensions of
-                                        menopause that are not best understood via medical paradigms. For example,
-                                        menopause is also a political phenomenon, including matters of health equity as
-                                        well as taboos and other social experiences of menopause.
+                    <div class="pr-lg-5">
+                      <p class="font-size-1">Hong Z. Tan is a Professor of Electrical and Computer Engineering in the
+                        College of Engineering at Purdue University, with courtesy appointments in the School of
+                        Mechanical Engineering and the Department of Psychological Sciences.
+                        <span class="collapse" id="hongBio">
+                          She directs the Haptic Interface Research Lab that investigates the science and technology of
+                          displaying information through the sense of touch, taking a perception-based approach to
+                          solving engineering problems. Tan received her Bachelor's degree in Biomedical Engineering
+                          from Shanghai Jiao Tong University and earned her Master and Doctorate degrees, both in
+                          Electrical Engineering and Computer Science, from the Massachusetts Institute of Technology
+                          (MIT). She was a Research Scientist at the MIT Media Lab before joining the faculty at Purdue
+                          University in 1998. Tan has held a McDonnell Visiting Fellowship at Oxford University, a
+                          Visiting Associate Professorship in the Department of Computer Science at Stanford University,
+                          a Guest Researcher position in the Institute of Life Science and Technology at Shanghai Jiao
+                          Tong University, a Senior Researcher and Research Manager position at Microsoft Research Asia,
+                          and a Professorship at Beijing Normal University Faculty of Psychology. She was a recipient of
+                          the prestigious US National Science Foundation CAREER award and a Chinese National Natural
+                          Science Fund’s Distinguished (Overseas) Young Scholar. In addition to serving on numerous
+                          program committees, Tan was a co-organizer of the Haptics Symposium from 2003 to 2005, served
+                          as the founding chair of the IEEE Technical Committee on Haptics from 2006-2008, and
+                          co-chaired the World Haptics Conference in 2015. She served two terms as an Associate Editor
+                          of the IEEE Transactions on Haptics, and was the Editor-in-Chief of the World Haptics
+                          Conference Editorial Board from 2012-2015. Tan was elevated to IEEE Fellow in 2017 for her
+                          contributions to wearable haptics. </span>
 
-                                        <br>
-                                        <br>
-                                        Increasingly, I am exploring Human Computer Interaction (HCI) and design for
-                                        women’s health from a different perspective, that of feminist utopian theory and
-                                        methods. Feminist utopianism seeks glimmers of radically better futures in
-                                        partial and fragmentary forms in the present. It is a critical practice that is
-                                        hopeful, materially engaged, and future-oriented—a strong fit for design. In
-                                        this talk, I develop an approach of feminist utopian design featuring ongoing
-                                        work that I’m doing with my collaborators on menopause. This includes results
-                                        from our empirical research on women’s menopause discourses, which locates
-                                        glimmers of possibility in the embodied experiences of the present. I will also
-                                        present our design activities envisioning menopause experiences from a preferred
-                                        future. The resulting feminist utopian design—integrating these empirical and
-                                        design moves—are intended to advance a deliberative discourse about HCI and
-                                        design’s roles—and responsibilities—in contributing to women’s health and
-                                        wellness.
-
-
-                                    </p>
-                                    <br>
-                                    <p class="text-justify font-zoom-out"><strong>Bio: </strong>Shaowen Bardzell is
-                                        Professor of Informatics in the School of Informatics, Computing, and
-                                        Engineering at Indiana University and the Affiliate Faculty of the Kinsey
-                                        Institute, Gender Studies, and Comparative Literature. Bardzell holds a Ph.D. in
-                                        Comparative Literature from Indiana University and pursues a humanistic research
-                                        agenda within the research and practice of Human Computer Interaction (HCI).
-                                        Throughout her work she augments contributions of feminism, design, and social
-                                        science to support technology’s role in social change. Recent research foci have
-                                        included care ethics and feminist utopian perspectives on IT, research through
-                                        design, women’s health, posthumanist approaches to sustainable design, and
-                                        cultural affairs in Asia. Her work is supported by the National Science
-                                        Foundation, Intel Corporation, and the Mellon Foundation among others. She is
-                                        the co-editor of Critical Theory and Interaction Design (MIT Press, 2018) and
-                                        co-author of Humanistic HCI (Morgan & Claypool, 2015). She directs the Center
-                                        for Critical and Humanistic Computing and co-directs the Cultural Research in
-                                        Technology (CRIT) Lab at Indiana University.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <hr>
-                            <div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/xiaojuan.png" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www.cse.ust.hk/admin/people/faculty/profile/mxj" target="_blank">
-                                        <h4 style="padding-top:15px;">Xiaojuan Ma</h4>
-                                    </a>
-                                    <strong>Hong Kong University of Science and Technology</strong>
-                                </div>
-                                <div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">
-                                        Manifesting AI Engagement in Human-Engaged Computing</h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract:</strong> Engagement, the key
-                                        construct that describes the synergy between human (users) and technology
-                                        (computing systems), is gaining increasing attention in academia and industry.
-                                        Human-Engaged Computing (HEC) is an emerging research paradigm that aims to
-                                        jointly advance the capability and capacity of human and computing technology.
-                                        In this talk, we discuss the opportunities and challenges in defining and
-                                        shaping the engagement of artificial intelligence (AI) in the process of
-                                        empowing human engagement.
-                                    </p>
-                                    <br>
-                                    <p class="text-justify font-zoom-out"><strong>Bio:</strong> Xiaojuan Ma is an
-                                        assistant professor of Human-Computer Interaction (HCI) at the Department of
-                                        Computer Science and Engineering (CSE), Hong Kong University of Science and
-                                        Technology (HKUST). She received the Ph.D. degree in Computer Science at
-                                        Princeton University. She was a post-doctoral researcher at the Human-Computer
-                                        Interaction Institute (HCII) of Carnegie Mellon University (CMU), and before
-                                        that a research fellow in the National University of Singapore (NUS) in the
-                                        Information Systems department. Before joining HKUST, she was a researcher of
-                                        Human-Computer Interaction at Noah's Ark Lab, Huawei Tech. Investment Co., Ltd.
-                                        in Hong Kong. Her background is in Human-Computer Interaction. She is
-                                        particularly interested in data-driven human-engaged AI and Human-Robot
-                                        Interaction in the domain of education, health, and design.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <hr>
-                            <div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/yuan.png" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="https://www.albany.edu/cehc/faculty/xiaojun-jenny-yuan" target="_blank">
-                                        <h4 style="padding-top:15px;">Xiaojun Yuan</h4>
-                                    </a>
-                                    <strong>University at Albany-SUNY</strong>
-                                </div>
-                                <div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">
-                                        Voice Search and Human-Engaged Computing
-                                    </h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract:</strong> Conversational
-                                        Information Retrieval, particularly the design and use of voice search systems
-                                        has been drawing significant attention during recent years. In this talk, I will
-                                        address challenges and opportunities in voice search systems with the focus on
-                                        improving the system capabilities and guiding the search process. I will also
-                                        talk about a couple of related projects and their research findings and
-                                        implications for voice search system design. Earlier research indicates that
-                                        users of information systems employed voice search much less frequently than
-                                        keyboard search because they disliked the system mistakes and the fact that they
-                                        were unable to modify the queries. We found that in keyboard search, query
-                                        reformulation is facilitated by partial query modification, which is not
-                                        supported by most of the current voice search systems. Users need to speak
-                                        complete query in voice search even with minor changes. We examined partial
-                                        query modification during voice search, and then compared a system with partial
-                                        query modification feature to a baseline system through a Wizard of OZ user
-                                        experiment. The theoretical framework of Human Engaged Computing can help
-                                        improve the search process of voice search systems, in particular providing the
-                                        guidance of the dialogue between users and voice search systems. At the end, I
-                                        will introduce a new journal called “Journal of Human Engaged Computing” we have
-                                        been planning to launch.
-                                    </p>
-                                    <br>
-                                    <p class="text-justify font-zoom-out"><strong>Bio:</strong> Xiaojun (Jenny) Yuan,
-                                        Ph.D., Associate Professor at College of Emergency Preparedness, Homeland
-                                        Security and Cybersecurity at University at Albany, State University of New
-                                        York. Her research interests include human computer interaction with focus on
-                                        user interface design, user experience and human information behavior. Her
-                                        research has been sponsored by federal, state and university funded grants, and
-                                        she has published extensively in various professional journals and conferences.
-                                        Dr. Yuan has served as committee members and reviewers for professional
-                                        conferences (e.g. ASIS&T, ACM DIS, ACM SIGIR, ACM SIGCHI, HICSS, OzCHI) and as
-                                        reviewers for professional journals (e.g. Journal of the Association for
-                                        Information Science and Technology (JASIST), ACM Transactions on Information
-                                        Systems, Information Processing & Management, Journal of Documentation). She is
-                                        co-chairing the ASIS&T SIG USE Awards Committee. She served as the proceedings
-                                        chair of the Information Interaction in Context (IIiX) conference in 2010,
-                                        workshops and tutorials Chair of ACM Conference on Human Information Interaction
-                                        and Retrieval (CHIIR) 2018. She is also active in research communities,
-                                        including New York Celebration of Women in Computing Conference, Human Computer
-                                        Interaction International, and Chinese CHI. She teaches courses in human
-                                        computer interaction, information retrieval, and information systems.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <hr>
-                            <div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/Byungjoo Lee.jpg" alt=""
-                                        class="rounded-circle speaker-avatar">
-                                    <a href="http://leebyungjoo.com" target="_blank">
-                                        <h4 style="padding-top:15px;">Byungjoo Lee</h4>
-                                    </a>
-                                    <strong>Korea Advanced Institute of Science and Technology</strong>
-                                </div>
-                                <div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">
-                                        Understanding Human-Computer Synchronization: From a Human-Engaged Computing
-                                        Perspective
-                                    </h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract:</strong> Human beings are
-                                        not passively accepting and processing information from the external
-                                        environment. Rather, humans actively predict their perceptions and the
-                                        consequences of their actions in real time. The success or failure of such
-                                        predictions is known to have a great impact on the predictor's sense of agency
-                                        and immersion in the environment. In this talk, I envision that in the age of
-                                        human-engaged computing, computers are no longer simply reacting to user input,
-                                        but must be synchronized with the user's real-time predictions. However, little
-                                        HCI research has been conducted on the human-computer synchronization process.
-                                        This talk introduces the latest theories and models related to the
-                                        human-computer synchronization process, and then discusses the design of
-                                        interfaces for human-engaged computing.
-                                    </p>
-                                    <br>
-                                    <p class="text-justify font-zoom-out"><strong>Bio:</strong>Professor Byungjoo Lee is
-                                        an assistant professor at KAIST and leads the Interactive Media Lab at the
-                                        Graduate School of Culture Technology. As a human-computer interaction
-                                        researcher, he has focused on building user performance models in dynamic and
-                                        synchronized interactions. His recent temporal pointing models (CHI'16, CHI'18,
-                                        CHI'19), in particular, explain how a user determines a optimal timing of button
-                                        input in response to rapidly changing computer states. As a result, the models
-                                        showed new possibilities in the design and optimization of input techniques and
-                                        game mechanics. He has served as a paper committee at HCI premier conferences
-                                        such as CHI, UIST, and MobileHCI.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <hr>
-                            <div class="row marketing">
-                                <div class="speaker col-lg-3 text-center">
-                                    <img src="static/images/jianmin.png" alt="" class="rounded-circle speaker-avatar">
-                                    <a href="http://tjdi.tongji.edu.cn/TeacherDetail.do?id=4237&lang=" target="_blank">
-                                        <h4 style="padding-top:15px;">Jianmin Wang</h4>
-                                    </a>
-                                    <strong>Tongji University</strong>
-                                </div>
-                                <div class="bubble-left col-lg-9">
-                                    <h4 class="speech-title">
-                                        Make Automated Drive Acting like a Man based on the Collaborative Driving
-                                        Synergized Interaction
-                                    </h4>
-                                    <p class="text-justify font-zoom-out"><strong>Abstract:</strong> In recent years,
-                                        the automated/autonomous driving are getting more and more attention from
-                                        industry, and AI (Artificial Intelligence) plays very important role in this
-                                        field. With the widespread application of intelligent functionalities in smart
-                                        cars, the conflicts between human drivers and automated/autonomous driving besed
-                                        on Artificial Intelligence has become increasingly prominent.
-                                        <br>
-                                        <br>
-                                        Automated/autonomous driving relies on artificial intelligence algorithms that
-                                        be constantly updated, but human drivers make behavioral decisions that do not
-                                        simply rely on algorithm logic but also on social moral and ethical issues. How
-                                        to make artificial intelligence truly think like a human with moral, ethical and
-                                        other aspects of thinking? In this talk, we try to match different levels of
-                                        Automated/autonomous driving intelligence with human driver’s different degree
-                                        of awareness of artificial intelligence under different autonomous driving
-                                        level, so that we will have a better performance of Collaborative Driving
-                                        Synergized Interaction.
-                                        <br>
-                                        <br>
-                                        With the roadmap of intelligent and connected vehicles technology, the driver’s
-                                        Eye on/off and Hand on/off are always the key judgement of the intelligent
-                                        driving levels. How to balance the behaviors of “intelligent driving” and human
-                                        drivers are the key issues to ensure that collaborative driving synergistically.
-                                        At the end of the paper, we describes an example of HMI design on Collaborative
-                                        Driving Synergized Interaction.
-
-                                    </p>
-                                    <br>
-                                    <p class="text-justify font-zoom-out"><strong>Bio:</strong> Dr. Wang Jianmin is
-                                        professor and director of Car Interaction Design Lab, Intelligent Media Research
-                                        Center, School of Arts and Media, Tongji University, Member of the Instructive
-                                        Committee on Animation & Digital Media Teaching Higher Education of the Ministry
-                                        of Education (2013-2017, 2018-2022) and Steering Committee Member of the CCF
-                                        Human-Computer Interaction Association. He was in charge of more than 20
-                                        projects, including 863 projects, National Natural Science Foundation, National
-                                        Science and Technology Support Program, National Natural Science Foundation,
-                                        Guangdong Natural Science Foundation, Key Technologies Research Projects between
-                                        Guangdong and Hong Kong, and other projects with industries. And he was rewarded
-                                        with of the National Science and Technology Progress Second Prize (2005),
-                                        Ministry of Education Science and Technology Progress First Prize(2008, 2003,
-                                        2001). His research focuses on Interaction Design, Automotive HMI Design and
-                                        Intelligent Media Research.
-                                    </p>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>-->
-
-                            <br>
-                        </div>
-                    </div>
-
-                </div>
-                <br>
-                <div id="program" class="container" style="padding-top:90px; margin-top:-60px">
-                    <h2>HEC Workshop Program</h2><br>
-                    <h4 class="display-4">Day 1: March 19, 2021 Tokyo time</h4>
-                    <h6>Session 1 Chair: Daisuke Sakamoto</h6>
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">JST</th>
-                                <th scope="col">Agenda</th>
-                                <th scope="col">Speaker</th>
-                                <th scope="col">Topic</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">3/19/21 9:00</th>
-                                <th>Opening Speech</th>
-                            <th>Xiangshi Ren, Xiaojuan Ma, Xiaojun Yuan</th>
-                                <th></th>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">3/19/21 9:15</th>
-                                <th>Keynote</th>
-                                <th>Zhiwen Yu</th>
-                                <th>Ten Scientific Problems in Human Behavior Understanding</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/19/21 10:00</th>
-                                <th>Keynote</th>
-                                <th>Gloria Mark</th>
-                                <th>Distractions, Stress, and Productivity in our Digital Experience</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/19/21 10:45</th>
-                                <th>Keynote</th>
-                                <th>Abhishek Gupta</th>
-                                <th>Designing for Humans: Getting Responsible AI in Practice</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/19/21 11:30</th>
-                                <th>Genearnal Q & A</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </tbody>
-                    </table><br>
-                                        <h6>Session 2 Chair: Xiangmin Fan</h6>
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">JST</th>
-                                <th scope="col">Agenda</th>
-                                <th scope="col">Speaker</th>
-                                <th scope="col">Topic</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">3/19/21 15:00</th>
-                                <th>Keynote</th>
-                                <th>Fang You</th>
-                                <th>Design Guidelines for the Size and Length of Chinese Characters Displayed in the Intelligent Vehicle's Central Console Interface</th>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">3/19/21 15:45</th>
-                                <th>Keynote</th>
-                                <th>Anirudha Joshi</th>
-                                <th>Designing for and with Emergent Users</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/19/21 16:30</th>
-                                <th>Keynote</th>
-                                <th>Gilbert Cockton</th>
-                                <th>Engaging Humanities with Worthwhile Computing</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/19/21 17:15</th>
-                                <th>Genearnal Q & A</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </tbody>
-                    </table><br>
-                    <h4 class="display-4">Day 2: March 20, 2021 Tokyo time</h4>
-                                        <h6>Session 3 Chair: Geehyuk Lee</h6>
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">JST</th>
-                                <th scope="col">Agenda</th>
-                                <th scope="col">Speaker</th>
-                                <th scope="col">Topic</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">3/20/21 9:00</th>
-                                <th>Keynote</th>
-                            <th>Jonathan Grudin</th>
-                                <th>Engaging with a Virtual Companion</th>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">3/20/21 9:45</th>
-                                <th>Keynote</th>
-                                <th>Hong Z. Tan</th>
-                                <th>The Science and Art of Conveying Information through Touch for Human-Engaged Computing</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/20/21 10:30</th>
-                                <th>Keynote</th>
-                                <th>Jian Zhao</th>
-                                <th>Support Effective Decision Making by Engaging Humans with Predictive Models via Interactive Visualization</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/20/21 11:15</th>
-                                <th>Keynote</th>
-                                <th>Dakuo Wang</th>
-                                <th>Human-Centered AI Design Guideline for Healthcare AI Systems: The Case Study of China</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/20/21 12:00</th>
-                                <th>Genearnal Q & A</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </tbody>
-                    </table><br>
-                                        <h6>Session 4 Chair: Sayan Sarcar</h6>
-                    <table class="table table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">JST</th>
-                                <th scope="col">Agenda</th>
-                                <th scope="col">Speaker</th>
-                                <th scope="col">Topic</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">3/20/21 15:00</th>
-                                <th>Keynote </th>
-                            <th>Miwako Doi</th>
-                                <th>Interaction with Data-driven Society</th>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">3/20/21 15:45</th>
-                                <th>Keynote</th>
-                                <th>Kazuhisa Shibata</th>
-                                <th>Perceptual and Cognitive Changes Induced by Decoded Neurofeedback</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/20/21 16:30</th>
-                                <th>Keynote</th>
-                                <th>Johanna Schmidt</th>
-                                <th>Data visualization literacy as a key for data understanding</th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/20/21 17:15</th>
-                                <th>Genearnal Q & A</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <th scope="row">3/20/21 17:40</th>
-                                <th>Closing speech</th>
-                                <th>Zhiyong Fu</th>
-                                <th></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <br>
-                <!-- <div id="posters" class="container" style="padding-top:66px; margin-top:-66px">
-            <h4>Posters</h4>
-            <p>Go to the next pages</p>
-          </div> -->
-                <!--<div id="call" class="container" style="padding-top:66px; margin-top:-66px">
-                    <h2>Call for Short Paper</h2>
-                    <hr />
-                    <p>The international workshop on Human-Engaged Computing (IWHEC 2020) will be held at the Center for
-                        Human-Engaged Computing (CHEC) at Kochi University of Technology in Japan on January 10th, 2020.
-                    </p>
-                    <p>Information and Communication Technologies (ICTs) are now playing significant roles in everyday
-                        life. Human-Engaged Computing (HEC) concerns the way humans interact with ICTs and the impact
-                        these technologies have on human lives, relationships, human potential and human capabilities.
-                        This workshop is intended to become a platform for researchers with interest in ICTs and related
-                        areas to exchange ideas, discuss on-going projects, and report research findings. </p>
-                    <p>The short paper track invites submissions from all ICT areas in relation to the concept of
-                        Human-Engaged Computing. Submissions will be judged on such criteria as creativity, design,
-                        quality of content and presentation, and significance for theory. <i><strong>Some short papers
-                                will be selected for recommending to submit a revised version to a professional journal
-                                after the workshop.</strong></i> </p>
-                    <p><strong>Authors are required to submit: </strong></p>
-                    <p>1. A short paper, following the <a href="https://chi2020.acm.org/authors/chi-proceedings-format/"
-                            target="_blank">SIGCHI Extended Abstracts</a>, maximum 2 pages (without reference),
-                        single-spaced. </p>
-                    <p>2. A designed graphic poster representing the short paper, including the main content, graphs,
-                        data or conclusion of your research. Your poster should be brought to the venue and placed on
-                        designated notice boards. The poster size should be A0 (84.1 x 118.9cm, 33.11 x 46.81 inches),
-                        and there is no AC power supply for poster presentations.</p>
-                    <p>Please note that there is no requirement to anonymize poster or short paper submissions. Once
-                        accepted, at least one author must register for the workshop. </p>
-                    <p><strong>Important Dates (JST):</strong></p>
-                    <p>November 15 23:59 (extend to Nov 25th 23:59), 2019: Short paper submission deadline</p>
-                    <p>November 20 (extend to Nov 30th), 2019: Decision notification sent out to authors</p>
-                    <p>November 25 23:59 (extend to Dec 5th 23:59), 2019: Early-Bird registration deadline</p>
-                    <p>January 10, 2020: Workshop day</p>
-                    <p><strong>How to submit your short paper: </strong></p>
-                    <p>The short paper and poster (PDF file) should be sent to <i><strong>xyuan@albany.edu</strong></i>,
-                        CC to
-                        <i><strong>grace.eden@tutanota.com</strong></i> and <i><strong>info@xrenlab.com</strong></i>.
-                    </p>
-                    <hr>
-                    <p id="posterlist"><strong>Accepted Poster List</strong></p>
-                    <table class="table table-striped">
-                        <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Poster</th>
-                                </tr>
-                                </thead><tbody>
-                                        <tr>
-                                            <th>1</th>
-                                            <td>
-                                                <strong>Innovation Method of Cultural Heritage Teaching based on the Concept of Human-Engaged Computing (Honorable Mention)</strong>
-                                                <br>
-                                                <i>Peng Tan, Yi Ji</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>2</th>
-                                            <td>
-                                                <strong>Effects of the characteristics of virtual agents on mental state and behavior in virtual environment</strong>
-                                                <br>
-                                                <i>Naoki Kawashima, Hiroaki Shigemasu</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>3</th>
-                                            <td>
-                                                <strong>Effects of the form of self-avatar on behavior and mental state in VR environment</strong>
-                                                <br>
-                                                <i>Yuma Akashi, Hiroaki Shigemasu</i>
-                                            </td>
-                                        </tr>    
-                                                              
-                                        <tr>
-                                            <th>4</th>
-                                            <td>
-                                                <strong>Computational Style Guides for Graphical User Interface Design</strong>
-                                                <br>
-                                                <i>Chen Wang, Xinpeng Li, Seira Ito, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                         <tr>
-                                            <th>5</th>
-                                            <td>
-                                                <strong>Computational Aesthetics for Helping Cross-Cultural GUI Design</strong>
-                                                <br>
-                                                <i>Ayumu Ono, Yonezawa Kyoichiro, Chen Wang, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>6</th>
-                                            <td>
-                                                <strong>Design Research for Sedentary Behavior of the White Collar in Office Situation</strong>
-                                                <br>
-                                                <i>Huang Zhengtao, Xin Xin</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>7</th>
-                                            <td>
-                                                <strong>A New Type of Female Safety Product Designed for Night (Honorable Mention)</strong>
-                                                <br>
-                                                <i>Yuwei Sun, Xin Xin</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>8</th>
-                                            <td>
-                                                <strong>Designing an Activity Reporting and Plan Sharing System in Research Teams</strong>
-                                                <br>
-                                                <i>Fitra Rahmamuliani, Kavous Salehzadeh Niksirat, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        
-                                        
-                                        <tr>
-                                            <th>9</th>
-                                            <td>
-                                                <strong>Prediction of Motor Learning Ability Using Resting-State Brain Activity and Reaching Task (The Best Poster Award)
-                                                </strong>
-                                                <br>
-                                                <i>Aya Yokota, Hiroshi Kadota</i>
-                                            </td>
-                                        </tr>
-                                       <tr>
-                                            <th>10</th>
-                                            <td>
-                                                <strong>Improved Single-Image Super-Resolution for Brain MRI image based on FSRCNN</strong>
-                                                <br>
-                                                <i>Hongtao Zhang, Shinomiya Yuki, Shinichi Yoshida, Yanchun Liang</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>11</th>
-                                            <td>
-                                                <strong>Investigating Cognitive Strategies when Correcting Errors: From the Eye- Hand Movement Perspective</strong>
-                                                <br>
-                                                <i>Yang Li, Kouya Ono, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>   
-                                        <tr>
-                                            <th>12</th>
-                                            <td>
-                                                <strong>Swap: A Replacement-based Text Revision Technique for Mobile Devices</strong>
-                                                <br>
-                                                <i>Yang Li, Naoki Higashi, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>    
-                                        <tr>
-                                            <th>13</th>
-                                            <td>
-                                                <strong>Investigation on the Framework of Gaze-based Interaction</strong>
-                                                <br>
-                                                <i>Jian Zhang, Xinhui Jiang, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>14</th>
-                                            <td>
-                                                <strong>Understanding Eye-hand Coordination on Mobile Touchscreen Devices</strong>
-                                                <br>
-                                                <i>Mikina Nambu, Xinhui Jiang, Xiangshi Ren
-        </i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>15</th>
-                                            <td>
-                                                <strong>Understanding the Role of Eye and Hand in the Target Acquisition Task</strong>
-                                                <br>
-                                                <i>Hijiri Kaneko, Xinhui Jiang, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>16</th>
-                                            <td>
-                                                <strong>Eye-hand Coordination during Trajectory-based Task on Mobile Devices</strong>
-                                                <br>
-                                                <i>Saki Hiramatsu, Xinhui Jiang, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>17</th>
-                                            <td>
-                                                <strong>Motion VR Game System Developed To Enhance Cognition of Elderly</strong>
-                                                <br>
-                                                <i>Xiaoxuan Li, Kavous Salehzadeh Niksirat, Jiayuan Geng, Dongdong Weng, Zhihang Guo, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>18</th>
-                                            <td>
-                                                <strong>Comparing Chinese and English Input Performance</strong>
-                                                <br>
-                                                <i>Hongyun Lyu, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>19</th>
-                                            <td>
-                                                <strong>Design of Depression Suicide Tendency Monitoring Based on Strain Theory</strong>
-                                                <br>
-                                                <i>Chunyuan Lan, Xi Chen, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>20</th>
-                                            <td>
-                                                <strong>Evaluating Webpage Aesthetics Using Deep Learning</strong>
-                                                <br>
-                                                <i>Yusuke Tokito, Akinori Kondo, Chen Wang</i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>21</th>
-                                            <td>
-                                                <strong>Investigation to Input Modalities Based on Spatial Region Array</strong>
-                                                <br>
-                                                <i>Yanyin Zhou, Jibin Yin</i>
-                                            </td>
-                                        </tr>
-
- <tr>
-                                            <th>22</th>
-                                            <td>
-                                                <strong> Enhancing Text Input Efficiency in VR Applications (Honorable Mention) </strong>
-                                                <br>
-                                                <i> Yang Li, Kibum Kim, Yilin Zheng, Takaaki Kubo, Xiangshi Ren</i>
-                                            </td>
-                                        </tr>
-
-                                </tbody>
-                        
-                </table>
-                </div>-->
-                <!--<div id="photo" class="container" style="padding-top:90px; margin-top:-90px">
-                    <h2>Photos</h2>
-                    <hr />
-                    <img src="static/images/pic.jpg" alt="" style="width:80%;">
-                    <br>
-                </div>
-                <br>
-                <br>-->
-                <!--<div id="registration" class="container" style="padding-top:90px; margin-top:-90px"
-                    <h2>Registration</h2>
-                    <hr />
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Type</th>
-                                <th scope="col">Early-Bird (Ends Nov 25, 2019)</th>
-                                <th scope="col">Regular </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Standard</th>
-                                <td>
-                                    $300
-                                </td>
-                                <td>
-                                    $600
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Student</th>
-                                <td>
-                                    $200
-                                </td>
-                                <td>
-                                    $400
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>-->
-                    <!-- Button trigger modal -->
-
-                    <!--<button type="button" class="btn btn-raised btn-info mb-4" data-toggle="modal"
-                        data-target="#exampleModal">
-                        Go to registration
-                    </button>-->
-
-                    <!-- Modal -->
-                    <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Register in IWHEC 2020 with Paypal
-                                    </h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <iframe
-                                        src="https://docs.google.com/forms/d/e/1FAIpQLScnbm7pY-QUZvIL1sacuyS5TMYCwR9TqN3U0QUkSn4QRUbzbA/viewform?embedded=true"
-                                        width="100%" height="700" frameborder="0" marginheight="0"
-                                        marginwidth="0">Loading…</iframe> <br>
-                                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                                        <input type="hidden" name="cmd" value="_s-xclick">
-                                        <input type="hidden" name="hosted_button_id" value="GAFY2FM5SMC2G">
-                                        <table>
-                                            <tr>
-                                                <td><input type="hidden" name="on0"
-                                                        value="Registration Type">Registration Type</td>
-                                            </tr>
-                                            <tr>
-                                                <td><select name="os0">
-                                                        <option value="Standard">Standard $300.00 USD</option>
-                                                        <option value="Student">Student $200.00 USD</option>
-                                                    </select> </td>
-                                            </tr>
-                                        </table>
-                                        <input type="hidden" name="currency_code" value="USD">
-                                        <br>
-                                        <input type="image"
-                                            src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0"
-                                            name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                                            width="1" height="1">
-                                    </form>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                <!--</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-                    <blockquote class="blockquote" style="    padding: 10px 20px;
-      margin: 0 0 20px;
-      font-size: 17.5px;
-      border-left: 5px solid #eee;">
-                        <p class="text-justify">
-                            Accommodation recommendation:
-                            <br>
-                            <a href="https://southerncity-hotel.com/">SOUTHERN CITY HOTEL(サザンシティホテル)</a>
-                            <br>
-                            (The bus will arrive here for picking up and sending participants to the location of IWHEC
-                            2020 - Kochi University of Technology. )
-                            <br>
-                            <br>
-                            If you need assistance for visa application documents or booking accommodation please
-                            contact:<br>
-                            Ms. Kyoko Hatakenaka: <a
-                                href="mailto:hatakenaka.kyoko@kochi-tech.ac.jp">hatakenaka.kyoko@kochi-tech.ac.jp</a><br>
-                            Ms. Chiyo Kawagoe: <a
-                                href="mailto:kawagoe.chiyo@kochi-tech.ac.jp">kawagoe.chiyo@kochi-tech.ac.jp</a>
-                            <br>
-                            <br>
-                            We provide two kinds of invitation: <br>
-                            1) Poster presentation - for participants who submited a short paper and a designed graphic
-                            poster<br>
-                            2) Workshop participation - for participants without submission<br>
-                            <br>
-                            Please inform which case suits your need when contacting our stuff.
-                        </p>
-                    </blockquote>
-                    <hr>
-                </div>-->
-
-                <div id="committee" class="container" style="padding-top:90px; margin-top:-90px">
-                    <h2>Committee Member</h2>
-                    <hr />
-
-                    <ul class="lead">
-                        <li>Xiangshi Ren, Kochi University of Technology (General Chair)</li>
-                    <!--    <li>Zixue Cheng, Aizu University (General Chair)</li> -->
-
-                       <li>Xiaojuan Ma, HKUST (Program Chair)</li>
-                       <li>Xiaojun Yuan,  State University of NewYork (Program Chair)</li>
-
-                        <li>Geehyuk Lee, KAIST (Publicity chair)</li>
-
-                        <li>Xiangmin Fan, ISCAS (Publicity chair)</li>
-
-                        <li>Daisuke Sakamoto, Hokkaido University (Publicity chair)</li>
-
-                        <li>Sayan Sarcar, Tsukuba University (Publicity chair)</li>
-
-                    </ul>
-                    <H4>Web/Poster Designer</H4>
-                    <ul class="lead">
-                        <li>Chen Wang, Kochi University of Technology</li>
-                        <li>Qing Xia, Tsinghua University</li>
-                       
-                    </ul>
-                    <h4>Technical Support: </h4>
-                    <ul class="lead">
-                         <li>Xiaofei Zhu, Kochi University of Technology</li>
-                        <li>Takaaki Kubo, Kochi University of Technology</li>
-
-                    </ul>
-                    <h4>Secretaries: </h4>
-                    <ul class="lead">
-                        <li>Naoko Koume, Kochi University of Technology</li>
-                        <li>Kyoko Hatakenaka, Kochi University of Technology</li>
-                    </ul>
-                    <br>
-                    <br>
-                </div>
-                <div class="blockList container" id="hec">
-                    <div class="page-header">
-                        <h2>Reference</h2>
-                    </div>
-                    <hr />
-                    <div>
-                        <img src="assets/images/chec2.png" alt="" class="rounded" style="    width: 40%;
-    margin-left: 30px;
-    float: right;">
-                        <blockquote class="blockquote" style="    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee;">
-                            <p class="text-justify">The concept of Human-Engaged Computing (HEC) has been published in
-                                IEEE Computer, 49(8), entitled, “Rethinking the relationship between humans and
-                                computers”, and CCF Transactions on Pervasive Computing and Interaction, 1(4), entitled,
-                                <a href="https://link.springer.com/article/10.1007/s42486-019-00007-0">“Human-Engaged Computing:
-                                    the future of Human–Computer Interaction”</a>. HEC has also been
-                                presented in an invited panel entitled, “Human Computer Integration versus Powerful
-                                Tools” at ACM CHI 2017 (Denver, USA). HEC colleagues also held the SIG entitled,
-                                “Approaching Engagement towards Human-Engaged Computing” at CHI 2018 (Montreal, Canada).
-                                The HEC article entitled, “Twelve Agendas on Interacting with Information: A
-                                Human-Engaged Computing Perspective” (Data and information management, 4(3)) was published
-                                recently.
-                            </p>
-                            <a
-                                href="static/images/IEEE Computer article on Rethinking the Relationship between Humans and Computers.pdf"><i
-                                    class="material-icons mr-1 align-bottom">get_app</i>See IEEE Computer Article</a>
-                            <a
-                                href="static/images/CHI 2017 Panel on Human Computer Integration versus Powerful Tools.pdf"><i
-                                    class="material-icons mr-1 align-bottom">get_app</i> See CHI'17 Panel</a>
-                            <a href="static/images/sigs1013-salehzadeh-niksiratA.pdf"><i
-                                    class="material-icons mr-1 align-bottom">get_app</i> See CHI'18 SIG</a>
-                            <br>
-                            <a href="static/images/Ren2019_Article_Human-EngagedComputingTheFutureofHCI.pdf"><i
-                                    class="material-icons mr-1 align-bottom">get_app</i>See CCF Transactions on
-                                Pervasive Computing and Interaction</a>
-
-                            <br>
-                            <a href="https://mp.weixin.qq.com/s/5Fh68A76rLkAwFPSnqdlhA"><i
-                                    class="material-icons mr-1 align-bottom">get_app</i>See Springer Featured
-                                Article</a>
-                            <a href="https://content.sciendo.com/configurable/contentpage/journals$002fdim$002f4$002f3$002farticle-p191.xml"><i
-                                    class="material-icons mr-1 align-bottom">get_app</i>See HEC & Information
-                                Article</a>
-                                <br>
-                            <br>
-
-<p>
-  <button class="btn btn-primary collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    More relevant papers
-  </button>
-</p>
-<div class="collapse" id="collapseExample" style="">
-  <div class="card card-body">
-      <ur>
-          <li><a href="https://www.ijcai.org/Proceedings/2018/0809.pdf">Ma, X. (2018). Towards human-engaged AI. In Proc. International Joint Conference on Artificial Intelligence (IJCAI).</a></li>
-          <li><a href="https://www.sciencedirect.com/science/article/pii/S1071581920300343">Sun, Z., Reani, M., Li, Q., and Ma, X. (2020). Fostering Engagement in Technology-Mediated Stress Management: A Comparative Study of Biofeedback Designs. International Journal of Human-Computer Studies (IJHCS). 102430.</a></li>
-          <li><a href="https://dl.acm.org/doi/pdf/10.1145/3313831.3376324">Wu, Z., Jiang, Y., Liu, Y., and Ma, X. (2020). Predicting and Diagnosing User Engagement with Mobile UI Animation via a Data-Driven Approach. In Proc. CHI2020.</a></li>
-          <li><a href="https://dl.acm.org/doi/pdf/10.1145/3170427.3188560">Shi, Y., Yan, X. Ma, X., Lou, Y., and Cao, N. (2018). Designing Emotional Expressions of Conversational States for Voice Assistants: Modality and Engagement. In Proc. CHI2018 EA.</a></li>
-          <li><a href="https://dl.acm.org/doi/pdf/10.1145/3025453.3025469">Sun, M., Zhao, Z., and Ma, X. (2017). Sensing and Handling Engagement Dynamics in Human-Robot Interaction Involving Peripheral Computing Devices. In Proc. CHI2017.</a></li>
-          <li><a href="https://dl.acm.org/doi/pdf/10.1145/2901790.2901836">Silpasuwanchai, C., Ma, X., Shigemasu, H., and Ren, X. (2016). Developing a Comprehensive Engagement Framework of Gamification for Reflective Learning. In Proc. DIS2016.</a></li>
-      </ur>
-  </div>
-</div>
-
-
-                        </blockquote>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="blockList container" id="access">
-                    <!--<div class="page-header">
-                        <h2>Access</h2>
-                    </div>
-                    <hr />
-                    <blockquote class="blockquote" style="    padding: 10px 20px;
-      margin: 0 0 20px;
-      font-size: 17.5px;
-      border-left: 5px solid #eee;">
-                        <p class="text-justify">Kochi is connected by air and rail services from major cities in Japan,
-                            e.g.,
-                            Tokyo and Osaka. The flight from Tokyo’s Haneda Airport to Kochi’s Ryoma Airport takes about
-                            1 hour
-                            while the flight from Osaka’s Itami Airport takes about 40 minutes.
-                        </p>
-                    </blockquote>
-                    <img src="assets/images/map.png" alt="" class="rounded mx-auto d-block" style="width: 100%" />
-                    <blockquote>
-                        <p class="lead">If you need assistance booking accommodation please contact: <br>Kyoko
-                            Hatakenaka <a href="mailto:hatakenakakyoko@gmail.com">＜hatakenakakyoko@gmail.com＞</a>.</p>
-                    </blockquote>
-                    <footer class="footer">
-                        <h3>Sponsor</h3>
-                        <br>
-                        <a href="https://www.kochi-tech.ac.jp">
-                            <img src="assets/images/kut.png" alt="" width="80">
+                        <a class="link-collapse" data-toggle="collapse" href="#hongBio" role="button"
+                          aria-expanded="false" aria-controls="hongBio">
+                          <span class="link-collapse-default">Read more <i
+                              class="fas fa-angle-down fa-sm ml-1"></i></span>
+                          <span class="link-collapse-active">Read less <i class="fas fa-angle-up fa-sm ml-1"></i></span>
                         </a>
-                        <span class="lead">&nbsp;&nbsp;&nbsp;School of Information, Kochi University of
-                            Technology</span>-->
-                        <br>
-                        <br>
-                        <div class="clearfix"></div>
-                        <hr>
-                        <address>
+                      </p>
+                    </div>
 
-                            <!-- <blockquote style="font-size:14px;">
-                                <br> Website Design: <strong>Fitra Rahmamuliani, Chen Wang</strong>
-                                &nbsp;&nbsp; | &nbsp;&nbsp; Registration System:
-                                <strong>Xinhui Jiang</strong>
-                            </blockquote> -->
+                  </div>
+                  <div class="col-lg-8 mb-3 mb-lg-0 column-divider-lg">
+                    <hr class="d-lg-none">
+                    <div class="pl-lg-5">
+                      <span class="h1 text-primary">Hong Z. Tan</span>
+                      <div class="media-body">
+                        <span class="text-dark font-weight-bold">Purdue University</span>
+                      </div>
+                      <hr>
+                      <blockquote class="h3 font-weight-normal mb-4">The Science and Art of Conveying Information
+                        through Touch for Human-Engaged Computing
+                      </blockquote>
 
-                            <div class="rounded float-left" >
-                                <strong>
-                                <a href="http://xrenlab.com">© 2020-2021 Center for Human Engaged Computing.
-                                </a>
-                            </strong>
-                            </div>
+                      <div class="media">
+                        <div class="avatar avatar-xs avatar-circle d-lg-none mr-2">
+                          <img class="avatar-img" src="./assets/img/100x100/img19.jpg" alt="Image Description">
+                        </div>
 
-                            <img src="assets/images/Barcode.png" class="rounded float-right" alt="..." style="width: 24%">
+                        <div class="media-body">
+                          <div class="mb-5">
+                            <p class="text-justify">As we rethink the relationship between humans and computers for the future of HCI, we
+                              also need to re-examine how the sense of touch contributes to human-engaged computing.
 
-                            <br>Kochi University of Technology，Tosayamada, Kami City，Kochi, JAPAN<br>
-                            <abbr title="Phone">P:</abbr> +81-887-57-2087
+                              <span class="collapse" id="hongAbstract">
+                                Haptic interfaces can convey information, affect, or both. In the first part of this
+                                talk, I will describe project TAPS as an example of the science of conveying speech
+                                information through touch. We have long known that speech communication through the skin
+                                is possible through research on natural methods of tactual speech communication used by
+                                individuals with severe hearing and/or visual impairments. Despite a long history of
+                                research, however, the development of sensory-substitution devices to support the
+                                communication of speech has proven to be a difficult task. We have now demonstrated that
+                                up to 500 English words can be learned at a rate of 1 word per minute on a TActile
+                                Phonemic Sleeve (TAPS) worn on the forearm. Key insights in designing distinctive haptic
+                                symbols, mapping all 39 English phonemes to the symbols, and training learners to
+                                recognize phonemes and words will be described. In the second part of this talk, I will
+                                present project palmScape as an example of the art of conveying emotion through touch.
+                                The palmScape is a tactile display for the palm that delivers calm and pleasant
+                                vibrotactile patterns evocative of familiar natural phenomena. I will describe the
+                                display itself and the signal design journey. The results from an affective rating study
+                                confirm that the sensations evoked by palmScape are visceral and delightful. I will wrap
+                                up the talk by speculating ways that haptic interfaces can contribute to human-engaged
+                                computing by conveying information in a calm and delightful manner. Imagine a world
+                                where touch serves as an additional or alternative channel of communication for people
+                                with all levels of sensory capabilities, and tactile emojis bring smiles to everyone’s
+                                face!
+                              </span>
 
-                        </address>
-                        <address>
-                            <a href="mailto:info@xrenlab.com">info@xrenlab.com</a>
-                        </address>
-
-                        <div class="clearfix"></div>
-                    </footer>
-                    <button type="button" id="scrollUp" class="btn btn-secondary bmd-btn-fab" style="position: fixed; z-index: 2147483647;
-      bottom: 20px;
-      right: 20px;
-      opacity: .8;"><i class="material-icons">arrow_upward</i></button>
+                              <a class="link-collapse" data-toggle="collapse" href="#hongAbstract" role="button"
+                                aria-expanded="false" aria-controls="hongAbstract">
+                                <span class="link-collapse-default">Read more <i
+                                    class="fas fa-angle-down fa-sm ml-1"></i></span>
+                                <span class="link-collapse-active">Read less <i
+                                    class="fas fa-angle-up fa-sm ml-1"></i></span>
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <!-- End Card Body -->
             </div>
-            <div class="col-md-3 container-content">
-                <div id="" style="padding-top:100px; margin-top:-90px;">
-                    <img class="container">
-                        <h4 style="text-align: center;">Organizer</h4>
+            <div class="col-lg-3 d-none d-lg-block">
+              <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-light"
+                data-options='{direction: "reverse"}' style="overflow: visible;">
+                <div
+                  data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"4", mid:"0", final:"-4"}]'>
+                  <img class="img-fluid rounded-lg shadow-lg" src="./static/images/speakers/HongZT.jpg"
+                    alt="Image Description">
 
-                   <div style="text-align: center;">
-                            <a href="http://xrenlab.com">
-                            <img src="assets/images/CHECRED.png" alt="" width="300" style="margin: 0 auto;padding-top:30px;">
-                            </a>
-                   </div>
-                  <div style="text-align: center;">
-                            <a href="http://www.icachi.org/">
-                            <img src="assets/images/icachi.png" alt="" width="250" style="margin: 0 auto; padding-top:35px;">
-                            </a>
+                  <!-- SVG Shapes -->
+                  <figure class="max-w-15rem w-100 position-absolute bottom-0 right-0 z-index-n1">
+                    <div class="mb-n7 mr-n7">
+                      <img class="img-fluid" src="./assets/svg/components/dots-5.svg" alt="Image Description">
+                    </div>
+                  </figure>
+                  <!-- End SVG Shapes -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials Section -->
+
+    <!-- Testimonials Section -->
+    <div class="bg-light rounded-lg mx-3 mx-md-11 mb-3">
+      <div class="container space-1 space-md-2">
+        <div class="card bg-transparent shadow-none">
+          <div class="row">
+            <div class="col-lg-3 d-none d-lg-block">
+              <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll bg-light"
+                data-options='{direction: "reverse"}' style="overflow: visible;">
+                <div
+                  data-parallaxanimation='[{property: "transform", value:" translate3d(0,{{val}}rem,0)", initial:"4", mid:"0", final:"-4"}]'>
+                  <img class="img-fluid rounded-lg shadow-lg" src="./static/images/speakers/Gloria Mark.png"
+                    alt="Image Description">
+
+                  <!-- SVG Shapes -->
+                  <figure class="max-w-15rem w-100 position-absolute bottom-0 left-0 z-index-n1">
+                    <div class="mb-n7 ml-n7">
+                      <img class="img-fluid" src="./assets/svg/components/dots-5.svg" alt="Image Description">
+                    </div>
+                  </figure>
+                  <!-- End SVG Shapes -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <!-- Card Body -->
+              <div class="card-body h-100 rounded-lg p-0 p-md-4">
+
+                <div class="row">
+                  <div class="col-lg-8 mb-3 mb-lg-0">
+                    <div class="pr-lg-5">
+                      <span class="h1 text-primary">Gloria Mark</span>
+                      <div class="media-body">
+                        <span class="text-dark font-weight-bold">University of California, Irvine</span>
+                      </div>
+                      <hr>
+                      <blockquote class="h3 font-weight-normal mb-4">47 Seconds of Focus:
+                        Distractions, Stress and Productivity in our Digital Experience
+                      </blockquote>
+
+                      <div class="media">
+                        <div class="avatar avatar-xs avatar-circle d-lg-none mr-2">
+                          <img class="avatar-img" src="./assets/img/100x100/img19.jpg" alt="Image Description">
+                        </div>
+
+                        <div class="media-body">
+                          <div class="mb-5">
+                            <p class="text-justify">Most of us spend our days among two different environments: an offline physical world but
+                              also an online digital world.
+
+                              <span class="collapse" id="gloriaAbstract">
+                                In this talk I will discuss over a decade of empirical research that reveals the effects
+                                of digital media use in people’s everyday lives. The ongoing revolution in the
+                                development of sensor technologies is enabling new ways to measure human behavior in
+                                situ unobtrusively and with precision. I will discuss how I create living laboratories
+                                using a mixed-methods approach with unobtrusive sensors, showing for example, how
+                                attention focus, stress and affect are impacted by digital media use, and how attention
+                                follows rhythms over the day. I will discuss the role of cognitive processes in using
+                                digital media and how mental resources are taxed, for example when people switch rapidly
+                                among multiple tasks or try to inhibit distractions. Attention is goal-directed, and
+                                maintaining goals is especially hard when working with digital media where there are
+                                competing demands on attention. There are also individual differences and physiological
+                                effects in maintaining focus while on digital media. I claim that placing the burden on
+                                individuals to be self-disciplined to focus is the wrong approach. I will discuss other
+                                strategies, including how technology might support people in being more focused and
+                                productive with digital media.
+                              </span>
+
+                              <a class="link-collapse" data-toggle="collapse" href="#gloriaAbstract" role="button"
+                                aria-expanded="false" aria-controls="gloriaAbstract">
+                                <span class="link-collapse-default">Read more <i
+                                    class="fas fa-angle-down fa-sm ml-1"></i></span>
+                                <span class="link-collapse-active">Read less <i
+                                    class="fas fa-angle-up fa-sm ml-1"></i></span>
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
-                        <hr />
-                <h4 style="text-align: center;">Sponsor</h4>
+                  <div class="col-lg-4 column-divider-lg">
+                    <hr class="d-lg-none">
 
-                <div class="row" style="margin: auto;">
+                    <div class="pl-lg-5">
+                      <p class="font-size-1">Gloria Mark is a Professor in the Department of Informatics, University of
+                        California, Irvine. Her research focuses on studying how the use of digital technology impacts
+                        our lives in real-world contexts.
+                        <span class="collapse" id="gloriaBio">
+                          Her goal is to use these insights to promote positive experiences for information technology
+                          use to increase health and well-being. She received her PhD in Psychology from Columbia
+                          University. Prior to UCI she worked at the German National Research Center for Information
+                          Technology (GMD, now Fraunhofer Institute) and has been an ongoing visiting researcher at
+                          Microsoft Research since 2012, and also had been a visiting researcher at IBM, National
+                          University of Singapore, and the MIT Media Lab. She was inducted into the ACM SIGCHI Academy
+                          in 2017 and has been a Fulbright scholar. She has published over 200 papers and her work has
+                          appeared in the top conferences and journals in the field of Human-Computer Interaction, and
+                          she has won multiple paper awards. She was the general co-chair for the premier ACM CHI 2017
+                          conference, general chair of the New Future of Work Symposium 2020, and is on the editorial
+                          boards of the ACM TOCHI and Human-Computer Interaction journals. Her work has appeared in the
+                          popular press such as The New York Times, The Atlantic, the BBC, NPR, Time, The Wall Street
+                          Journal, and others. She was invited to present her work at the Aspen Ideas Festival and has
+                          presented at SXSW conferences. </span>
 
- 
-                      <div style="text-align: center;">
-                            <a href="https://www.kochi-tech.ac.jp">
-                            <img src="assets/images/kut.jpg" alt="" width="300" style="margin: 0 auto;padding-top:40px;">
-                            </a>
-                       </div>
-
-                    <div class="container" >
-                   
-                        <div style="text-align: center;">
-                            <a href="https://sigchi.jp/">
-                            <img src="assets/images/SIGCHIJP.png" alt="" width="200" style="margin: 0 auto;padding-top:40px;">
-                            </a>
-                       </div>
-                        <div style="text-align: center;">
-                            <a href="https://china.acm.org/SIGCHI/index.html">
-                            <img src="assets/images/SIGCHICH.png" alt="" width="250" style="margin: 0 auto; padding-top:35px;">
-                            </a>
-                       </div>
-                        <div style="text-align: center;">
-                            <a href="http://hcikorea.org/">
-                            <img src="assets/images/SIGCHIKorea.png" alt="" width="200" style="margin: 0 auto;padding-top:20px;">
-                            </a>
-                       </div>
-                    <!--    <div class="container" >
-                            <a href="http://scpj.jp/" style="TEXT-DECORATION:none;" >
-                                <h4  style="text-align: center;font-weight:bold">日本華人教授会議</h4>
-                            <h6  style="text-align: center;">THE SOCIETY OF CHINESE PROFESSORS IN JAPAN</h6>
-                            </a>
-                        </div> -->
-
-                        <div class="clearfix"></div>
-                        </div>
-                        </div>
-
-
-                        </div>
-                       </div>
-                       </div>
+                        <a class="link-collapse" data-toggle="collapse" href="#gloriaBio" role="button"
+                          aria-expanded="false" aria-controls="gloriaBio">
+                          <span class="link-collapse-default">Read more <i
+                              class="fas fa-angle-down fa-sm ml-1"></i></span>
+                          <span class="link-collapse-active">Read less <i class="fas fa-angle-up fa-sm ml-1"></i></span>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <!--<ul id="list-left" class="nav list-group position-sticky">
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#iwhec">Intro</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#speakers">Speakers</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#program">Program</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#call">Call for short paper</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#photo">Photos</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#committee">Committee</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#registration">Registration</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#hec">Reference</a>
-                    </li>
-                    <li>
-                        <a class="list-group-item list-group-item-action" href="#access">Access</a>
-                    </li>
-                </ul>-->
+              </div>
+              <!-- End Card Body -->
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials Section -->
+
+    <div class="text-center space-1">
+      <span class="divider divider-text" id="program">Program</span>
+    </div>
+    <!-- End Title -->
+
+    <div class="container">
+      <!-- Timeline -->
+      <ul class="step">
+        <!-- Timeline Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
+            <div class="step-content">
+              <h4 class="h5 text-danger mb-0">March 19, 2021, 9:00 ~ </h4>
+              <span class="timeline-heading text-danger">Session 1 Chair: Daisuke Sakamoto</span>
+              <div class="mb-4 mt-2">
+                <p class="mb-1"><span class="font-weight-bold">Xiangshi Ren, Xiaojuan Ma, Xiaojun Yuan</span> - Opening Speech</p>
+                <small class="d-block text-muted">Mar 19, 9:00 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Zhiwen Yu</span> - Ten Scientific Problems in Human Behavior Understanding</p>
+                <small class="d-block text-muted">Mar 19, 9:15 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Gloria Mark</span> - Distractions, Stress, and Productivity in our Digital Experience</p>
+                <small class="d-block text-muted">Mar 19, 10:00 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Abhishek Gupta</span> - Designing for Humans: Getting Responsible AI in Practice</p>
+                <small class="d-block text-muted">Mar 19, 10:45 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Genearnal Q & A</span></p>
+                <small class="d-block text-muted">Mar 19, 11:30 JST</small>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- End Timeline Item -->
+
+        <!-- Timeline Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
+            <div class="step-content">
+              <h4 class="h5 text-danger mb-0">March 19, 2021, 15:00 ~ </h4>
+              <span class="timeline-heading text-danger">Session 2 Chair: Xiangmin Fan</span>
+              <div class="mb-4 mt-2">
+                <p class="mb-1"><span class="font-weight-bold">Fang You</span> - Design Guidelines for the Size and Length of Chinese Characters Displayed in the Intelligent Vehicle's Central Console Interface</p>
+                <small class="d-block text-muted">Mar 19, 15:00 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Anirudha Joshi</span> - Designing for and with Emergent Users</p>
+                <small class="d-block text-muted">Mar 19, 15:45 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Gilbert Cockton</span> - Engaging Humanities with Worthwhile Computing</p>
+                <small class="d-block text-muted">Mar 19, 16:30 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Genearnal Q & A</span></p>
+                <small class="d-block text-muted">Mar 19, 17:15 JST</small>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- End Timeline Item -->
+         
+        <!-- Timeline Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
+            <div class="step-content">
+              <h4 class="h5 text-warning mb-0">March 20, 2021, 9:00 ~ </h4>
+              <span class="timeline-heading text-warning">Session 3 Chair: Geehyuk Lee</span>
+              <div class="mb-4 mt-2">
+                <p class="mb-1"><span class="font-weight-bold">Jonathan Grudin</span> - Engaging with a Virtual Companion</p>
+                <small class="d-block text-muted">Mar 20, 9:00 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Hong Z. Tan</span> - The Science and Art of Conveying Information through Touch for Human-Engaged Computing</p>
+                <small class="d-block text-muted">Mar 20, 9:45 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Jian Zhao</span> - Support Effective Decision Making by Engaging Humans with Predictive Models via Interactive Visualization</p>
+                <small class="d-block text-muted">Mar 20, 10:30 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Dakuo Wang</span> - Human-Centered AI Design Guideline for Healthcare AI Systems: The Case Study of China</p>
+                <small class="d-block text-muted">Mar 20, 11:15 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Genearnal Q & A</span></p>
+                <small class="d-block text-muted">Mar 20, 12:00 JST</small>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- End Timeline Item -->
+
+        <!-- Timeline Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
+            <div class="step-content">
+              <h4 class="h5 text-warning mb-0">March 20, 2021, 15:00 ~ </h4>
+              <span class="timeline-heading text-warning">Session 4 Chair: Sayan Sarcar</span>
+              <div class="mb-4 mt-2">
+                <p class="mb-1"><span class="font-weight-bold">Miwako Doi</span> - Interaction with Data-driven Society</p>
+                <small class="d-block text-muted">Mar 20, 15:00 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Kazuhisa Shibata</span> - Perceptual and Cognitive Changes Induced by Decoded Neurofeedback</p>
+                <small class="d-block text-muted">Mar 20, 15:45 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Johanna Schmidt</span> - Data visualization literacy as a key for data understanding</p>
+                <small class="d-block text-muted">Mar 20, 16:30 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Genearnal Q & A</span></p>
+                <small class="d-block text-muted">Mar 20, 17:15 JST</small>
+              </div>
+              <div class="mb-4">
+                <p class="mb-1"><span class="font-weight-bold">Zhiyong Fu</span> - Closing speech</p>
+                <small class="d-block text-muted">Mar 20, 17:40 JST</small>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- End Timeline Item -->
+      
+        <!-- Timeline Item -->
+        <li class="step-item">
+          <div class="step-content-wrapper">
+            <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
+            <div class="step-content">
+              <h4 class="h5 text-primary mb-0">March 21, 2021</h4>
+              <p class="mb-2">Affiliated Forum on Human · Technology · Future, March 21, 2021 (In Chinese)</p>
+            </div>
+          </div>
+        </li>
+        <!-- End Timeline Item -->
+      </ul>
+      <!-- End Timeline -->
+    </div>
+
+    <!-- Team Section -->
+
+    <!-- Title -->
+    <div class="text-center space-1">
+      <span class="divider divider-text" id="committee">Committee Members</span>
+    </div>
+    <!-- End Title -->
+
+    <div class="container space-1">
+      <div class="row mx-n2 mb-5">
+        <div class="col-sm-6 col-lg-3 px-2 mb-3">
+          <!-- Team -->
+          <div class="card h-100 transition-3d-hover">
+            <div class="card-body">
+              <div class="avatar avatar-lg avatar-circle mb-4">
+                <img class="avatar-img" src="./static/images/committee/100x100/ren.jpg" alt="Image Description">
+              </div>
+
+              <span class="d-block small font-weight-bold text-cap mb-1">General Chair</span>
+              <h4 class="text-lh-sm">Xiangshi Ren</h4>
+              <p class="font-size-1">Kochi University of Technology</p>
+            </div>
+          </div>
+          <!-- End Team -->
         </div>
 
-    </div>
+        <div class="col-sm-6 col-lg-3 px-2 mb-3">
+          <!-- Team -->
+          <div class="card h-100 transition-3d-hover">
+            <div class="card-body">
+              <div class="avatar avatar-lg avatar-circle mb-4">
+                <img class="avatar-img" src="./static/images/committee/100x100/xiaojuan.png" alt="Image Description">
+              </div>
+
+              <span class="d-block small font-weight-bold text-cap mb-1">Program Chair</span>
+              <h4 class="text-lh-sm">Xiaojuan Ma</h4>
+              <p class="font-size-1">The Hong Kong University of Science and Technology</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 px-2 mb-3">
+          <!-- Team -->
+          <div class="card h-100 transition-3d-hover">
+            <div class="card-body">
+              <div class="avatar avatar-lg avatar-circle mb-4">
+                <img class="avatar-img" src="./static/images/committee/100x100/yuan.png" alt="Image Description">
+              </div>
+
+              <span class="d-block small font-weight-bold text-cap mb-1">Program Chair</span>
+              <h4 class="text-lh-sm">Xiaojun Yuan</h4>
+              <p class="font-size-1">University at Albany - SUNY</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 px-2 mb-3">
+          <!-- Team -->
+          <div class="card h-100 transition-3d-hover">
+            <div class="card-body">
+              <div class="avatar avatar-lg avatar-circle mb-4">
+                <img class="avatar-img" src="./static/images/committee/100x100/chen.png" alt="Image Description">
+              </div>
+
+              <span class="d-block small font-weight-bold text-cap mb-1">Designer</span>
+              <h4 class="text-lh-sm">Chen Wang</h4>
+              <p class="font-size-1">Kochi University of Technology</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        <div class="col-sm-6 col-lg-3 px-2 mb-3">
+          <!-- Team -->
+          <div class="card h-100 transition-3d-hover">
+            <div class="card-body">
+              <div class="avatar avatar-lg avatar-circle mb-4">
+                <img class="avatar-img" src="./static/images/committee/100x100/qing.png" alt="Image Description">
+              </div>
+
+              <span class="d-block small font-weight-bold text-cap mb-1">Designer</span>
+              <h4 class="text-lh-sm">Qing Xia</h4>
+              <p class="font-size-1">Tsinghua University</p>
+            </div>
+          </div>
+          <!-- End Team -->
+        </div>
+
+        
+      </div>
 
     </div>
-    <script>$(document).ready(function () {
-            $('body').bootstrapMaterialDesign();
-            var offset = 0;
-            $('.navbar li a').click(function (event) {
-                event.preventDefault();
-                $($(this).attr('href'))[0].scrollIntoView();
-                scrollBy(0, offset);
-            });
-            $('#list-left li a').click(function (event) {
-                event.preventDefault();
-                $($(this).attr('href'))[0].scrollIntoView();
-                scrollBy(0, offset);
-            });
-            $('[data-spy="scroll"]').each(function () {
-                var $spy = $(this).scrollspy('refresh')
-            })
-            if (jQuery('#scrollUp').length) {
-                var scrollTrigger = 100, // px
-                    backToTop = function () {
-                        var scrollTop = jQuery(window).scrollTop();
-                        if (scrollTop > scrollTrigger) {
-                            jQuery('#scrollUp').addClass('show');
-                        } else {
-                            jQuery('#scrollUp').removeClass('show');
-                        }
-                    };
-                backToTop();
-                jQuery(window).on('scroll', function () {
-                    backToTop();
-                });
-                jQuery('#scrollUp').on('click', function (e) {
-                    e.preventDefault();
-                    jQuery('html,body').animate({
-                        scrollTop: 0
-                    }, 700);
-                });
-            }
-            // grab the initial top offset of the navigation 
-            var stickyNavTop = $('#list-left').offset().top;
+    <!-- End Team Section -->
+    <!-- Title -->
+    <div class="text-center space-1">
+      <span class="divider divider-text" id="reference">Reference</span>
+    </div>
+    <!-- End Title -->
 
-            // our function that decides weather the navigation bar should have "fixed" css position or not.
-            var stickyNav = function () {
-                var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+    <!-- Features Section -->
+    <div class="container space-top-1 space-top-lg-1 space-bottom-lg-1">
+      <div class="row justify-content-lg-between align-items-lg-center">
+        <div class="col-lg-6 mb-9 mb-lg-0">
+          <div class="mb-4">
+            <h2>Human-Engaged Computing</h2>
+            <p class="text-justify">The concept of Human-Engaged Computing (HEC) has been published in
+              IEEE Computer, 49(8), entitled, “Rethinking the relationship between humans and
+              computers”, and CCF Transactions on Pervasive Computing and Interaction, 1(4), entitled,
+              <a href="https://link.springer.com/article/10.1007/s42486-019-00007-0">“Human-Engaged Computing:
+                the future of Human–Computer Interaction”</a>. HEC has also been
+              presented in an invited panel entitled, “Human Computer Integration versus Powerful
+              Tools” at ACM CHI 2017 (Denver, USA). HEC colleagues also held the SIG entitled,
+              “Approaching Engagement towards Human-Engaged Computing” at CHI 2018 (Montreal, Canada).
+              The HEC article entitled, “Twelve Agendas on Interacting with Information: A
+              Human-Engaged Computing Perspective” (Data and information management, 4(3)) was published
+              recently.
+            </p>
+          </div>
 
-                // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-                // otherwise change it back to relative
-                if (scrollTop > stickyNavTop) {
-                    $('#list-left').addClass('sticky');
-                } else {
-                    $('#list-left').removeClass('sticky');
-                }
-            };
+        </div>
 
-            stickyNav();
-            // and run it again every time you scroll
-            $(window).scroll(function () {
-                stickyNav();
-            });
-            $('#list-left a:first').addClass('active');
-            $('#list-left a:last').removeClass('active');
-        });
-    </script>
+        <div class="col-lg-6">
+          <div class="position-relative max-w-50rem mx-auto" data-aos="fade-up">
+            <!-- Device Mockup -->
+            <div class="device device-iphone-x w-100 mx-auto px-4" style="border-radius:1rem;">
+              <img class="device-iphone-x-frame" src="./static/images/background/hec.png" alt="Image Description">
+            </div>
+            <!-- End Device Mockup -->
 
+          </div>
+        </div>
+        <div class="col-lg-12 mt-6">
+          <!-- Table -->
+          <div class="table-responsive">
+            <table class="table table-borderless table-thead-bordered table-nowrap table-align-middle table-hover">
+              <thead class="thead-light">
+                <tr>
+                  <th colspan="2">Publication</th>
+                  <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2"><a href="#">IEEE Computer Article</a></td>
+                  <td><a class="btn btn-xs btn-white"
+                      href="./static/reference/IEEE Computer article on Rethinking the Relationship between Humans and Computers.pdf"
+                      download="IEEE Computer Article"><i class="fas fa-eye mr-1"></i> View</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><a href="#">CHI'17 Panel</a></td>
+                  <td><a class="btn btn-xs btn-white"
+                      href="./static/reference/CHI 2017 Panel on Human Computer Integration versus Powerful Tools.pdf"
+                      download="CHI'17 Panel"><i class="fas fa-eye mr-1"></i> View</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><a href="#">CHI'18 SIG</a></td>
+                  <td><a class="btn btn-xs btn-white" href="./static/reference/sigs1013-salehzadeh-niksiratA.pdf"
+                      download="CHI'18 SIG"><i class="fas fa-eye mr-1"></i> View</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><a href="#">CCF Transactions on
+                      Pervasive Computing and Interaction</a></td>
+                  <td><a class="btn btn-xs btn-white"
+                      href="./static/reference/Ren2019_Article_Human-EngagedComputingTheFutureofHCI.pdf"
+                      download="CCF"><i class="fas fa-eye mr-1"></i> View</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><a href="https://mp.weixin.qq.com/s/5Fh68A76rLkAwFPSnqdlhA">Springer Featured
+                      Article</a></td>
+                  <td><a class="btn btn-xs btn-white" href="https://mp.weixin.qq.com/s/5Fh68A76rLkAwFPSnqdlhA"
+                      download="Springer Featured"><i class="fas fa-eye mr-1"></i> View</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><a
+                      href="https://content.sciendo.com/configurable/contentpage/journals$002fdim$002f4$002f3$002farticle-p191.xml">HEC
+                      & Information
+                      Article</a></td>
+                  <td><a class="btn btn-xs btn-white"
+                      href="./static/reference/IEEE Computer article on Rethinking the Relationship between Humans and Computers.pdf"
+                      download="HEC & Information"><i class="fas fa-eye mr-1"></i> View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- End Table -->
+        </div>
+      </div>
+    </div>
+    <!-- End Features Section -->
+
+
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <hr>
+  <footer class="container space-2 space-top-lg-2">
+
+    <!-- Copyright -->
+    <div class="row align-items-sm-center">
+      <div class="col-sm-6 mb-4 mb-sm-0">
+        <p class="small mb-0">&copy; 2021-2022 <a href="http://xrenlab.com">Center for Human Engaged Computing</a>.</p>
+        <p class="small mb-0">Kochi University of Technology，Tosayamada, Kami City，Kochi, JAPAN</p>
+      </div>
+
+      <div class="col-sm-6 text-sm-right">
+        <!-- Social Networks -->
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="mailto:info@xrenlab.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="mailto:info@xrenlab.com" class="ml-2 small mb-0">info@xrenlab.com</a>
+          </li>
+          <li class="list-inline-item mb-2 mb-sm-0">
+            <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="">
+              <i class="fas fa-phone-alt"></i>
+            </a>
+            <span class="ml-2 small mb-0">+81-887-57-2087</span>
+          </li>
+        </ul>
+        <!-- End Social Networks -->
+      </div>
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+  <!-- Go to Top -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": 15
+         },
+         "show": {
+           "bottom": 15
+         },
+         "hide": {
+           "bottom": -15
+         }
+       }
+     }'>
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <!-- End Go to Top -->
+
+  <!-- JS Global Compulsory  -->
+  <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  <script src="./assets/vendor/typed.js/lib/typed.min.js"></script>
+  <script src="./assets/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+  <script src="./assets/vendor/aos/dist/aos.js"></script>
+  <script src="./assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF FANCYBOX
+      // =======================================================
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
+      });
+    });
+  </script>
+
+  <script>
+    $(document).on('ready', function () {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      var header = new HSHeader($('#header')).init();
+
+
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      var megaMenu = new HSMegaMenu($('.js-mega-menu'), {
+        desktop: {
+          position: 'left'
+        }
+      }).init();
+
+
+      // INITIALIZATION OF TEXT ANIMATION (TYPING)
+      // =======================================================
+      var typed = $.HSCore.components.HSTyped.init(".js-text-animation");
+
+
+      // INITIALIZATION OF FANCYBOX
+      // =======================================================
+      $('.js-fancybox').each(function () {
+        var fancybox = $.HSCore.components.HSFancyBox.init($(this));
+      });
+
+
+      // INITIALIZATION OF AOS
+      // =======================================================
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      $('.js-go-to').each(function () {
+        var goTo = new HSGoTo($(this)).init();
+      });
+    });
+  </script>
+
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/dist/polyfill.js"><\/script>');
+  </script>
 </body>
 
 </html>
