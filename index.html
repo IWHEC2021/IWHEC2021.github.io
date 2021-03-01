@@ -215,17 +215,10 @@
                 <br>
               </span>
             </h1>
-            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4" href="#">March 19 - 20, 2021</a>
-            <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0" href="day3.html">Affiliated Forum, March 21, 2021</a>
-          <br>
-          <br>
+            <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 mt-3" href="#">March 19 - 20, 2021</a>
+            <a class="btn btn-indigo btn-wide btn-pill transition-3d-hover mb-2 mb-sm-0 mt-3" href="day3.html">Affiliated Forum, March 21, 2021</a>
+            <p><a id="popover" class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mt-3" rel="popover" data-content="" title="Q&A Platform">Q&A Platform</a></p>
 
-              <figure class="max-w-30rem ">
-                <img class="max-w-15rem mb-3" src="./static/barcodes/Barcode.png" alt="Image Description">
-                <span class=" text-white h2 mx-3">
-                  Q&A Platform
-                </span>
-              </figure>
 
 
           </div>
@@ -2558,6 +2551,18 @@
         var goTo = new HSGoTo($(this)).init();
       });
     });
+  </script>
+
+  <script>
+$(document).ready(function() {
+  var image = '<img class="img-fluid" src="./static/barcodes/Barcode.png">';
+  $('#popover').popover({
+    placement: 'bottom',
+    trigger: 'hover',
+    content: image,
+    html: true
+  });
+});
   </script>
 
   <!-- IE Support -->
