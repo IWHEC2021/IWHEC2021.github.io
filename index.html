@@ -2885,10 +2885,15 @@
       var image = '<img class="img-fluid" src="./static/barcodes/March19.png"><br><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://withzz.com/live/895402677">March 19th</a></p><img class="img-fluid" src="./static/barcodes/March20.png"><br><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://withzz.com/live/895402678">March 20th</a></span>';
       $('#popoverwiz').popover({
         placement: 'bottom',
-        trigger: 'click',
+        trigger: 'hover',
+        delay: {
+             show: "000",
+             hide: "3000"
+        },
         content: image,
         html: true
       });
+
     });
   </script>
 
