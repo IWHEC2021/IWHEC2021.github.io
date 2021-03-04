@@ -147,7 +147,7 @@
 
           <!-- Default Poster btn -->
           <div class="navbar-brand navbar-brand-on-scroll">
-            <div class="btn-group btn-group-toggle data-toggle="buttons">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <a class="btn btn-outline-primary btn-xs btn-pill transition-3d-hover mb-sm-0 ml-3"
                 href="./VB/IWHEC_Poster.pdf" download="Poster"><i class="fas fa-file-download"></i> Download Poster</a>
               <a class="btn btn-outline-primary btn-xs btn-pill transition-3d-hover mb-sm-0"
@@ -206,7 +206,10 @@
                 <li class="navbar-nav-item">
                   <a class="nav-link" href="#reference">Reference</a>
                 </li>
-                <li class="nav-item navbar-nav-last-item">
+                <li class="navbar-nav-item">
+                  <a class="nav-link" href="#live">Live Platforms</a>
+                </li>
+                <!--<li class="nav-item navbar-nav-last-item">
                   <a class="btn btn-outline-light btn-pill shadow-soft transition-3d-hover navbar-brand-default"
                     href="day3.html" target="_blank">Affiliated Forum
                   </a>
@@ -218,7 +221,7 @@
                   <a class="btn btn-primary btn-pill shadow-soft transition-3d-hover navbar-brand-collapsed"
                     href="day3.html" target="_blank">Affiliated Forum
                   </a>
-                </li>
+                </li>-->
               </ul>
             </div>
           </div>
@@ -252,8 +255,10 @@
                   <br>
                 </span>
               </h1>
-              <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-4 mt-3"
+              <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3"
                 href="https://zoom.us/webinar/register/WN_sEa8w2-yTpiYL720_E8cTQ">March 19 - 20, 2021</a>
+              <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3"
+                href="day3.html">Affiliated Forum, March 20, 2021</a>
               <a id="popover" class="btn btn-indigo btn-wide btn-pill shadow-soft transition-3d-hover mt-3"
                 rel="popover" data-content="" title="Join at Slido.com #87206">Q&A Platform</a>
               <p><img class="max-w-19rem ml-3 mt-3" src="./static/barcodes/Registration.png"></p>
@@ -2687,19 +2692,17 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <hr>
-  <footer class="container space-2 space-top-lg-1">
+
+
+  <footer class="bg-light mt-auto py-3">
+  <div class="container space-2 space-top-lg-1 ">
     <!-- Copyright -->
-    <div class="row align-items-sm-center">
+    <div class="row">
       <div class="col-sm-6 mb-4 mb-sm-0">
         <p class="small mb-0">&copy; 2021-2022 <a href="http://xrenlab.com">Center for Human Engaged Computing</a>.</p>
         <p class="small mb-0">Kochi University of Technology，Tosayamada, Kami City，Kochi, JAPAN</p>
-      </div>
-
-      <div class="col-sm-6 text-sm-right">
-        <!-- Social Networks -->
-
-        <ul class="list-inline mb-3">
+        <div class="mt-3">
+              <ul class="list-inline mb-3">
           <li class="list-inline-item mb-2 mb-sm-0">
             <a class="btn btn-xs btn-icon btn-soft-indigo rounded-circle" href="mailto:info@xrenlab.com">
               <i class="fas fa-envelope"></i>
@@ -2713,11 +2716,43 @@
             <span class="ml-2 small mb-0">+81-887-57-2087</span>
           </li>
         </ul>
-        <!-- End Social Networks -->
       </div>
     </div>
+      <div id="live" class="col-sm-6 mb-4 mb-sm-0">
+        <!-- Social Networks -->
+        <p class="small mb-0">Live Video Streaming Platforms:</p>
+
+       <div class="row">
+        <div class="col-lg-3 mb-5 mb-lg-0 mt-3">
+          <div class="mx-0">
+            <a id="popoveryg" rel="popover" data-content="" title="Live URL of Youtube" href="https://youtu.be/JiHWkCwGIqY">
+              <img class="max-w-5rem mx-auto" style="max-width:6rem;"
+                src="./static/barcodes/YouTube.png" alt="Image Description">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-5 mb-lg-0 mt-3">
+          <div class="mx-0">
+            <a id="popoverbili" rel="popover" data-content="" title="Live URL of Bilibili" href="https://live.bilibili.com/22888922">
+              <img class="max-w-5rem mx-auto" style="max-width:6rem;"
+                src="./static/barcodes/bilibili.png" alt="Image Description">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-5 mb-lg-0 mt-3">
+          <div class="mx-0">
+            <a id="popoverwiz" rel="popover" data-content="" title="Live URL of Tencent WIZ">
+              <img class="max-w-5rem mx-auto" style="max-width:6rem;"
+                src="./static/barcodes/wiz.png" alt="Image Description">
+            </a>
+          </div>
+        </div>
+        <!-- End Social Networks -->
+      </div>
+
     <!-- End Copyright -->
-  </footer>
+  </div>
+    </footer>
   <!-- ========== END FOOTER ========== -->
 
   <!-- Go to Top -->
@@ -2813,10 +2848,44 @@
 
   <script>
     $(document).ready(function () {
-      var image = '<img class="img-fluid" src="./static/barcodes/Barcode.png">';
+      var image = '<img class="img-fluid" src="./static/barcodes/Youtubecode.png">';
       $('#popover').popover({
         placement: 'bottom',
         trigger: 'hover',
+        content: image,
+        html: true
+      });
+    });
+  </script>
+    </script>
+      <script>
+    $(document).ready(function () {
+      var image = '<img class="img-fluid" src="./static/barcodes/Youtubecode.png">';
+      $('#popoveryg').popover({
+        placement: 'bottom',
+        trigger: 'hover',
+        content: image,
+        html: true
+      });
+    });
+  </script>
+    <script>
+    $(document).ready(function () {
+      var image = '<img class="img-fluid" src="./static/barcodes/bilibilicode.png">';
+      $('#popoverbili').popover({
+        placement: 'bottom',
+        trigger: 'hover',
+        content: image,
+        html: true
+      });
+    });
+  </script>
+      <script>
+    $(document).ready(function () {
+      var image = '<img class="img-fluid" src="./static/barcodes/March19.png"><br><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://withzz.com/live/895402677">March 19th</a></p><img class="img-fluid" src="./static/barcodes/March20.png"><br><span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://withzz.com/live/895402678">March 20th</a></span>';
+      $('#popoverwiz').popover({
+        placement: 'bottom',
+        trigger: 'click',
         content: image,
         html: true
       });
