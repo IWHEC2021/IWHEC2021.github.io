@@ -256,15 +256,17 @@
                 </span>
               </h1>
               <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3"
-                href="https://zoom.us/webinar/register/WN_sEa8w2-yTpiYL720_E8cTQ">March 19 - 20, 2021</a>
+                >March 19 - 20, 2021</a>
               <a class="btn btn-light btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3"
                 href="day3.html">Affiliated Forum, March 21, 2021</a>
               <br>
+              <a id="popoverzoom" class="btn btn-indigo btn-wide btn-pill shadow-soft transition-3d-hover mt-3 mr-2"
+                rel="popover" data-content="" title="IWHEC 2021 Registration" href="https://zoom.us/webinar/register/WN_sEa8w2-yTpiYL720_E8cTQ">Registration</a>
               <a id="popover" class="btn btn-indigo btn-wide btn-pill shadow-soft transition-3d-hover mt-3"
                 rel="popover" data-content="" title="Join at Slido.com #87206" href="https://sli.do/6gztbwfn?qr">Q&A Platform</a>
               <a class="btn btn-indigo btn-wide btn-pill shadow-soft transition-3d-hover mb-2 mb-sm-0 mr-2 mt-3 ml-2"
                 href="https://forms.gle/2n39w2G5ipjhJHR99">Survey</a>
-              <p><img class="max-w-19rem ml-3 mt-3" src="./static/barcodes/Registration.png"></p>
+              <!--<p><img class="max-w-19rem ml-3 mt-3" src="./static/barcodes/Registration.png"></p>-->
 
 
 
@@ -2936,6 +2938,17 @@
     $(document).ready(function () {
       var image = '<img class="img-fluid" src="./static/barcodes/bilibilicode.png">';
       $('#popoverbili').popover({
+        placement: 'bottom',
+        trigger: 'hover',
+        content: image,
+        html: true
+      });
+    });
+  </script>
+      <script>
+    $(document).ready(function () {
+      var image = '<img class="img-fluid" src="./static/barcodes/Registration.png">';
+      $('#popoverzoom').popover({
         placement: 'bottom',
         trigger: 'hover',
         content: image,
