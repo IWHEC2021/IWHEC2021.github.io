@@ -2121,8 +2121,23 @@
           <div class="step-content-wrapper">
             <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
             <div class="step-content">
-              <h5 class="h5 text-warning mb-0">March 19, 2021, 9:00 ~ 9:15 JST&nbsp&nbsp&nbsp&nbsp&nbsp<a data-toggle="modal" data-target=".bd-example-modal-xl" href="https://youtu.be/8b2i9cy9ZFA"><i class="fas fa-caret-square-right">&nbsp&nbsp</i>Watch Replay</a></h5>
-              <div id="mymodal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+              <h5 class="h5 text-warning mb-0">March 19, 2021, 9:00 ~ 9:15 JST&nbsp&nbsp&nbsp&nbsp&nbsp<a data-toggle="modal" data-target="#myModal" href="#"><i class="fas fa-caret-square-right">&nbsp&nbsp</i>Watch Replay</a></h5>
+              <div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel">
+                   <div class="modal-dialog modal-xl" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                   <div class="modal-body">
+                     <video controls id="video1" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                       <source src="./assets/video/Opening.mp4" type="video/mp4">
+                       Your browser doesn't support HTML5 video tag.
+                     </video>
+                   </div>
+                    </div>
+                 </div>
+              </div>
+              <!--<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl" role="document">
                       <div class="modal-content">
 
@@ -2141,7 +2156,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>-->
               <span class="timeline-heading text-warning">Opening Speech: <br></span>
                 <span class="timeline-heading">
                   Masahiko Isobe, President of Kochi University of Technology - Opening remarks, <br>
@@ -2291,27 +2306,22 @@
           <div class="step-content-wrapper">
             <span class="step-icon step-icon-sm step-icon-soft-primary"><i class="far fa-calendar-alt"></i></span>
             <div class="step-content">
-              <h4 class="h5 text-warning mb-0">March 20, 2021, 17：40-17：50 JST&nbsp&nbsp&nbsp&nbsp&nbsp<a data-toggle="modal" data-target=".bd-example-modal-xl" href="https://youtu.be/8b2i9cy9ZFA"><i class="fas fa-caret-square-right">&nbsp&nbsp</i>Watch Replay</a></h4>
-                  <div id="mymodal" class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                      <div class="modal-content">
-
+              <h4 class="h5 text-warning mb-0">March 20, 2021, 17：40-17：50 JST&nbsp&nbsp&nbsp&nbsp&nbsp<a data-toggle="modal" data-target="#myModalc" href="#"><i class="fas fa-caret-square-right">&nbsp&nbsp</i>Watch Replay</a></h4>
+              <div class="modal fade bd-example-modal-xl" id="myModalc" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel">
+                   <div class="modal-dialog modal-xl" role="document">
+                     <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title h4" id="myExtraLargeModalLabel">IWHEC Closing Speech</h5>
-                          <button type="button" class="btn btn-xs btn-icon btn-soft-secondary" data-dismiss="modal" aria-label="Close">
-                            <svg aria-hidden="true" width="10" height="10" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                              <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"/>
-                            </svg>
-                          </button>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
-                        <div class="modal-body">
-                          <div class="embed-responsive embed-responsive-21by9">
-                              <iframe class="embed-responsive-item" id="closingvideo" src="./assets/video/Closing speech.mp4"></iframe>
-                          </div>
-                        </div>
-                      </div>
+                   <div class="modal-body">
+                     <video controls id="video2" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                       <source src="./assets/video/Closing speech.mp4" type="video/mp4">
+                       Your browser doesn't support HTML5 video tag.
+                     </video>
+                   </div>
                     </div>
-                  </div>
+                 </div>
+              </div>
               <span class="timeline-heading text-warning">Closing Speech: <br>Zhiyong Fu, President of ICACHI<br>Xiaojuan Ma, Executive Vice President of ICACHI</span>
             </div>
           </div>
@@ -3017,13 +3027,18 @@
     });
   </script>
   <script>
-  $("#mymodal").on('hidden.bs.modal', function () {
-        var vadiodom = document.getElementById("closingvideo");
-        vadiodom.controls = true;
-        if (!vadiodom.paused) {
-            vadiodom.pause();
-        }
-    });
+$('#myModal').on('shown.bs.modal', function () {
+  $('#video1')[0].play();
+})
+$('#myModal').on('hidden.bs.modal', function () {
+  $('#video1')[0].pause();
+})
+$('#myModalc').on('shown.bs.modal', function () {
+  $('#video2')[0].play();
+})
+$('#myModalc').on('hidden.bs.modal', function () {
+  $('#video2')[0].pause();
+})
   </script>
 
   <!-- IE Support -->
